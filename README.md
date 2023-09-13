@@ -18,18 +18,18 @@ Before you start building your portfolio, you should have a good understanding o
 - **Hero Section:** first thing that people see when they enter your portfolio
 - **About Me Section:** with a brief introduction about yourself and your skills.
 - **Projects Section:** where you can showcase your work. ( showcase Nyan cat and / or any other project that you have worked on)
-- **Contact Section:** with a form that visitors can use to get in touch with you.Go ahead and         add your linkedin, gmail and other contacts
+- **Contact Section:** with a form that visitors can use to get in touch with you.Go ahead and add your linkedin, gmail and other contacts
 - **Responsive:** Your portfolio should be responsive, meaning it should look great on desktop, tablet, and mobile devices.
-- Deploy your portfolio using <a href="https://vercel.com/" target="_blank">Vercel/a> or <a href="https://www.netlify.com/" target="_blank">Netlify /a>
+- Deploy your portfolio using <a href="https://vercel.com/" target="_blank">Vercel /> or <a href="https://www.netlify.com/" target="_blank">Netlify />
      
 
 ## BONUS:  You can work on these features at your own pace
 
      1.   Dark Mode: Implement a toggle button that allows users to switch between light and dark 
-     2.   Animation: Use CSS animations to add visual interest to your portfolio. For example, you   could add a hover effect to project images or create a smooth scroll effect for navigation.
-    4.   Additional Pages: Add additional pages to your portfolio, such as a blog or resume page.
-    5. Using API’s : do not pay for your data / API calls.
-    6..   Whatever you can think of!!!!
+     2.   Animation: Use CSS animations to add visual interest to your portfolio. For example, you could add a hover effect to project images or create a smooth scroll effect for navigation.
+     3. Additional Pages: Add additional pages to your portfolio, such as a blog or resume page.
+     4. Using API’s : do not pay for your data / API calls.
+     5. Whatever you can think of!!!!
     
     
 ## User Story
@@ -44,10 +44,10 @@ As a potential employer or client,
 ## Examples
 
  Past Portfolios:
-    - <a href="https://personal-portfolio-salomhamwi.vercel.app/" target="_blank">port1/a>
-    - <a href="https://gab-go-portfolio.vercel.app/" target="_blank">port2/a>
-    -  <a href="https://portfolio-website-jasmineplqn.vercel.app/" target="_blank">port3/a>
-    -  <a href="https://project-portfolio-viktordarko.vercel.app/" target="_blank">port4/a>
+    - <a href="https://personal-portfolio-salomhamwi.vercel.app/" target="_blank">port1/> <br/>
+    - <a href="https://gab-go-portfolio.vercel.app/" target="_blank">port2/a> <br/>
+    - <a href="https://portfolio-website-jasmineplqn.vercel.app/" target="_blank">port3/a> <br/>
+    - <a href="https://project-portfolio-viktordarko.vercel.app/" target="_blank">port4/a> <br/>
  
 
 
