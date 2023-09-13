@@ -1,6 +1,6 @@
 
 
-# Welcome to the Portfolio Building Challenge!
+# Welcome to the Portfolio Building Challenge! 💼
 
 ---
 
@@ -8,7 +8,7 @@ In this challenge you will be using React and Styled Components to create a prof
 
 ---
 
-## Getting Started
+## Getting Started 🎬
 
 ---
 
@@ -38,7 +38,7 @@ Before you start building your portfolio, you should have a good understanding o
     
  ---
  
-## User Story
+## User Story 📖
 
 ---
 
@@ -51,7 +51,7 @@ As a potential employer or client,
 
 ---
 
-## Examples
+## Examples 🔍
 
 ---
 
@@ -64,7 +64,7 @@ As a potential employer or client,
 
 ---
 
-## Submission Guidelines
+## Submission Guidelines 🫴🏽
 
 ---
 
@@ -78,7 +78,7 @@ In your submission, include a README.md file that explains your thought process 
 
 ---
 
-## Evaluation Criteria
+## Evaluation Criteria ✔️
 
 ---
 
@@ -91,7 +91,7 @@ Your portfolio will be evaluated based on the following criteria:
 
  ---
 
-### Additional help for your site
+### Additional help for your site 🙋🏽
 
 ---
 *Deployment:*
@@ -115,7 +115,7 @@ Images:
 
 ---
 
-## Conclusion
+## Conclusion 🎇
 
 ---
 
