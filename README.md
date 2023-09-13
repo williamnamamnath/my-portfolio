@@ -2,15 +2,15 @@
 
 # Welcome to the Portfolio Building Challenge! 💼
 
----
+
 
 In this challenge you will be using React and Styled Components to create a professional portfolio that will showcase your skills and experiences.
 
----
+
 
 ## Getting Started 🎬
 
----
+
 
 Before you start building your portfolio, you should have a good understanding of React and styled components. For reference, you can always go back and look at your workshops and online materials and utilize all the knowledge that you gathered
 
@@ -25,7 +25,7 @@ Before you start building your portfolio, you should have a good understanding o
 - **Responsive:** Your portfolio should be responsive, meaning it should look great on desktop, tablet, and mobile devices.
 - Deploy your portfolio using [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com)
      
----
+
 
 ## BONUS:  You can work on these features at your own pace
 
@@ -36,11 +36,11 @@ Before you start building your portfolio, you should have a good understanding o
      4.   Using API’s : do not pay for your data / API calls.
      5.   Whatever you can think of!!!!
     
- ---
+
  
 ## User Story 📖
 
----
+
 
 As a potential employer or client,
 
@@ -49,11 +49,11 @@ As a potential employer or client,
 3.    I also want to be able to contact you easily through  your portfolio.
 4.    I should be easily able to look at your portfolio on desktop, tablet, and mobile devices.
 
----
+
 
 ## Examples 🔍
 
----
+
 
  Past Portfolios: <br/>
     -  [port1](https://personal-portfolio-salomhamwi.vercel.app/)<br/> 
@@ -62,11 +62,10 @@ As a potential employer or client,
     -  [port4](https://project-portfolio-viktordarko.vercel.app/)<br/> 
  
 
----
+
 
 ## Submission Guidelines 🫴🏽
 
----
 
 When you have completed your portfolio, you should submit your project to a public **GitHub repository** and send us the GitHub and the deployed portfolio  link.
 We recommend using Git to manage your code changes and Netlify or Vercel ( links provided) to host your website
@@ -76,11 +75,11 @@ In your submission, include a README.md file that explains your thought process 
    - [Github Writing and formating Basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)<br/> 
   
 
----
+
 
 ## Evaluation Criteria ✔️
 
----
+
 
 Your portfolio will be evaluated based on the following criteria:
 
@@ -89,11 +88,11 @@ Your portfolio will be evaluated based on the following criteria:
 3.   Creativity and originality
 4.   Overall design and layout
 
- ---
+
 
 ### Additional help for your site 🙋🏽
 
----
+
 *Deployment:*
 
 [Deployment using Vercel](https://vercel.com/docs/concepts/get-started/deploy)
@@ -113,11 +112,11 @@ Images:
 [Unsplash](https://unsplash.com/)
 [Pexels](https://www.pexels.com/)
 
----
+
 
 ## Conclusion 🎇
 
----
+
 
 We believe that creating a portfolio with React is an excellent way to showcase your web development skills. We hope you find this challenge to be both fun and rewarding, and we look forward to seeing what you create!
 
