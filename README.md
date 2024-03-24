@@ -1,123 +1,17 @@
+Welcome to the repository of my portfolio project!
 
+I was very excited to work on this project since I love displaying my creativity and trying out different things since this is a personal project. However, because time was limited to create this portfolio from scratch, it was a bit hard doing only the minimum in order to submit this project. That being said, I definitely plan on making new modifications to it once I've submitted. For instance, I will definitely make my website look more aesthetically pleasing, I'll add subtle but cool effects and of course, I'll keep adding to my list of projects in my Projects section of the portfolio as I keep working on various workshops and/or projects that struck me in some way. 
 
-# Welcome to the Portfolio Building Challenge! 💼
+Having said all this, when I first started the project, I was definitely thinking too big with the limited time that was given. However, I knew for sure I wanted to keep my navigation bar clean, simple and not too crowded with buttons. In it includes my socials such as my Github, my LinkedIn as well as a link to the contact section of my website (which there is also a contact button at the bottom of the main page). 
 
+Also, my initial plan was to have all of my sections of my website on one page but since I wanted my portfolio to look cleaner and more presentable as a "first contact" when the user first visits my website, I decided to place each section of my website in a page of their own. However, to facilitate navigation to those pages, I added buttons at the bottom of the intro/main page. 
 
+I wanted to talk about myself but since I already decided on having a section on different pages (and that I might write a lot about myself), I decided to display a very brief introduction about myself as well as the skills that I learned throughout the bootcamp on my intro/main page. That way, I feel like it would captivate any potential recruiter's attention right away about what I can offer, then they can visit a more in-depth section about who I really am. 
 
-In this challenge you will be using React and Styled Components to create a professional portfolio that will showcase your skills and experiences.
+I also planned on adding a "back to the top" button but seeing as I am separating my website in different sections, I decided to add a home button to each section to make it easier coming back to the main page. 
 
+In addition, I was sold on making my name the "title" of the website, which can be found on the left side of the nav bar. Users can also click on my name to go back to the intro/main page. 
 
+Lastly, I did add a form section but I will most likely make some modifications to it (maybe add my socials again that section). For now, it does the trick but there is always room for improvement and seeing as I am a perfectionist, I will look into ways that I can make not only the contact section better, but also the portfolio as a whole. 
 
-## Getting Started 🎬
-
-
-
-Before you start building your portfolio, you should have a good understanding of React and styled components. For reference, you can always go back and look at your workshops and online materials and utilize all the knowledge that you gathered
-
-*Requirements*
-**NOTE: USE ALL THE CONCEPTS OF REACT THAT YOU HAVE LEARNT IN THE CLASS TO MAKE YOUR PORTFOLIO**
-  **COMPULSORY: Your portfolio should include the following functionalities (MVP)**
-
-- **Hero Section:** first thing that people see when they enter your portfolio
-- **About Me Section:** with a brief introduction about yourself and your skills.
-- **Projects Section:** where you can showcase your work. ( showcase Nyan cat and / or any other project that you have worked on)
-- **Contact Section:** with a form that visitors can use to get in touch with you.Go ahead and add your linkedin, gmail and other contacts
-- **Responsive:** Your portfolio should be responsive, meaning it should look great on desktop, tablet, and mobile devices.
-- Deploy your portfolio using [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com)
-     
-
-
-## BONUS:  You can work on these features at your own pace
-
-     1.   Dark Mode: Implement a toggle button that allows users to switch between light and dark 
-     2.   Animation: Use CSS animations to add visual interest to your portfolio. For example, you could add a hover effect to project 
-          images or create a smooth scroll effect for navigation.
-     3.   Additional Pages: Add additional pages to your portfolio, such as a blog or resume page.
-     4.   Using API’s : do not pay for your data / API calls.
-     5.   Whatever you can think of!!!!
-    
-
- 
-## User Story 📖
-
-
-
-As a potential employer or client,
-
-1.    I want to be able to navigate your portfolio and view your work and skills quickly and easily.
-2.    I want to see a clean, professional design that reflects your personal brand and showcases your abilities.
-3.    I also want to be able to contact you easily through  your portfolio.
-4.    I should be easily able to look at your portfolio on desktop, tablet, and mobile devices.
-
-
-
-## Examples 🔍
-
-
-
- Past Portfolios: <br/>
-    -  [port1](https://personal-portfolio-salomhamwi.vercel.app/)<br/> 
-    -  [port2](https://gab-go-portfolio.vercel.app/)<br/> 
-    -  [port3](https://portfolio-website-jasmineplqn.vercel.app)<br/> 
-    -  [port4](https://project-portfolio-viktordarko.vercel.app/)<br/> 
- 
-
-
-
-## Submission Guidelines 🫴🏽
-
-
-When you have completed your portfolio, you should submit your project to a public **GitHub repository** and send us the GitHub and the deployed portfolio  link.
-We recommend using Git to manage your code changes and Netlify or Vercel ( links provided) to host your website
-In your submission, include a README.md file that explains your thought process behind the design and implementation of your portfolio
-
-   - [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)<br/>
-   - [Github Writing and formating Basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)<br/> 
-  
-
-
-
-## Evaluation Criteria ✔️
-
-
-
-Your portfolio will be evaluated based on the following criteria:
-
-1.   Code quality and organization
-2.   Responsiveness and accessibility
-3.   Creativity and originality
-4.   Overall design and layout
-
-
-
-### Additional help for your site 🙋🏽
-
-
-*Deployment:*
-
-[Deployment using Vercel](https://vercel.com/docs/concepts/get-started/deploy)
-[Deployment using Netlify](https://blog.logrocket.com/deploy-react-apps-netlify-3-ways/)
-
-*Icons:*
-
-[React Icons](https://react-icons-kit.vercel.app/guide)
-[Font Awesome](https://fontawesome.com/v5/docs/web/use-with/react)
-
-Fonts: 
-
-[Google Fonts](https://fonts.google.com/)
-
-Images:
-
-[Unsplash](https://unsplash.com/)
-[Pexels](https://www.pexels.com/)
-
-
-
-## Conclusion 🎇
-
-
-
-We believe that creating a portfolio with React is an excellent way to showcase your web development skills. We hope you find this challenge to be both fun and rewarding, and we look forward to seeing what you create!
-
-PS: Once your course is complete, go ahead and change your react portfolio to a complete MERN project. Add API’s, authentication and authorization. Basically, go crazy with it 🙂
+As I said in the beginning, this version of my portfolio feels like a "rough draft" of what I really plan on doing, but I am definitely satisfied with what it looks like as of now and all the work I've put into it. 
