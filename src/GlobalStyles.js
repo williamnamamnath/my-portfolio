@@ -95,11 +95,34 @@ label {
 }
 
 .projects-section {
-    display: flex; 
+    text-align: center;
     justify-content: space-between;
+}
+
+.projects-img,
+.text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pj-img1 {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pj-img2 {
+    width: 400px;
+    height: 375px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-img {
     align-items: center;
-    gap: 2rem;
-    padding: 0 2rem;
 }
 
 .ul-btn {
@@ -193,6 +216,76 @@ label {
     list-style: none;
     gap: 2rem;
 }
+
+@media all and (min-width: 969px) {
+
+h1 {
+    font-size: 70px;
+}
+
+body {
+    width: 100vw;
+    font-size: medium;
+}
+
+.nav {
+    width: 100vw;
+}
+
+.projects-img {
+    width: 40%;
+    height: 40%;
+}
+}
+
+@media all and (max-width: 968px) {
+
+h1 {
+    font-size: 55px;
+}
+
+.name-title {
+    font-size: x-large;
+}
+
+body {
+    width: 100vw;
+    font-size: small;
+}
+
+p {
+    font-size: medium;
+}
+
+.nav {
+    width: 100vw;
+}
+
+.projects-img {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+}
+
+.pj-img1 {
+    width: 300px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pj-img2 {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
 `;
 
 export default GlobalStyles;
