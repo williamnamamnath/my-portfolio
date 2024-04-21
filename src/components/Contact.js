@@ -28,8 +28,8 @@ const blankInput = !firstName || !lastName || !message;
     
     return (
 <form className="form">
-<h1>Let's Get In Touch!</h1>
-<h2>For any questions or inquiries, please feel free to leave a message. Thank you!</h2>
+<h1 style={{textAlign: "center"}}>Let's Get In Touch!</h1>
+<p style={{textAlign: "center"}}>For any questions or inquiries, please feel free to leave a message. <br/> Thank you!</p>
 <br/>
 <label>First Name: </label>
 <input className="input-field" type="text" value={firstName} onChange={userFirstName} placeholder="Your first name"></input>

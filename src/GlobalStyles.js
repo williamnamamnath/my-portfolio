@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
 h1 {
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     font-size: 75px;
     text-decoration: underline;
@@ -27,9 +29,25 @@ h2 {
     font-size: auto;
 }
 
+h3 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 p {
     display: flex;
-    font-size: 25px;
+    font-size: 23px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .tech-stack {
@@ -185,20 +203,15 @@ label {
   outline: 0;
 }
 
-@media (min-width: 768px) {
-  .website-btn {
-    padding: 0 40px;
-  }
-}
-
 .nav {
     background-color: #333;
     color: white;
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 10px;
     padding: 0 2rem;
+    flex-wrap: wrap;
 }
 
 .nav a {
@@ -219,73 +232,114 @@ label {
 
 @media all and (min-width: 969px) {
 
-h1 {
-    font-size: 70px;
-}
-
 body {
     width: 100vw;
-    font-size: medium;
 }
 
 .nav {
     width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .projects-img {
     width: 40%;
     height: 40%;
-}
-}
-
-@media all and (max-width: 968px) {
-
-h1 {
-    font-size: 55px;
 }
 
 .name-title {
     font-size: x-large;
 }
 
-body {
-    width: 100vw;
-    font-size: small;
+.wd-position {
+    flex-wrap: wrap;
+    font-size: 75px;
+}
 }
 
-p {
-    font-size: medium;
-}
+@media all and (min-width: 360px) {
 
-.nav {
-    width: 100vw;
-}
+    .tech-stack {
+        flex-wrap: wrap;
+    }
 
-.projects-img {
+    .ul-btn {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .website-btn {
+        justify-content: center;
+    }
+
+    .nav {
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .links {
+        font-size: medium;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .name-title {
+        font-size: xx-large;
+    }
+
+    .body-space {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .pj-img1 {
+        max-width: 250px;
+        max-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+
+    .pj-img2 {
+        max-width: 250px;
+        max-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+
+    .text {
+        max-width: 75vw;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+    font-size: 23px;
+    flex-wrap: wrap;
     text-align: center;
-    display: block;
-    margin: auto;
-    width: 40%;
-    height: 40%;
+    }
+
+    h3 {
+        flex-wrap: wrap;
+    }
+
+    .wd-position {
+    flex-wrap: wrap;
+    font-size: 50px;
 }
 
-.pj-img1 {
-    width: 300px;
-    height: 250px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
-
-.pj-img2 {
-    width: 300px;
-    height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-}
-
 `;
 
 export default GlobalStyles;

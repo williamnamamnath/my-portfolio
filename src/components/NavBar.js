@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-const Name = styled.a`
-font-size: 2rem;
-`
-
 const NavBarLinks = styled.a`
 font-size: larger;
 `
@@ -12,7 +8,7 @@ const NavBar = () => {
     return (
         <>
         <nav className="nav">
-            <Name href="/" className="name-title">William Nam-Amnath</Name>
+            <a href="/" className="name-title">William Nam-Amnath</a>
             <ul>
               <li>
                 <NavBarLinks href="https://github.com/williamnamamnath" className="links">Github</NavBarLinks>
