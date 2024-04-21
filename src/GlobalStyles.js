@@ -4,7 +4,11 @@ const GlobalStyles = createGlobalStyle`
 
 * {
     box-sizing: border-box;
-    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 body {
@@ -258,6 +262,10 @@ body {
 }
 
 @media all and (min-width: 360px) {
+
+    * {
+        max-width: auto;
+    }
 
     .tech-stack {
         flex-wrap: wrap;
