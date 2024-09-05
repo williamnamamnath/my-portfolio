@@ -13,7 +13,7 @@ html, body {
 
 body {
     margin: 0;
-    background-color: #C5D5EA;
+    background-color: #FCDDBC;
     font-family: "Noto Sans Display";
 }
 
