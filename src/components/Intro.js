@@ -13,8 +13,8 @@ align-items: center;
 
 const ProfilePic = styled.img`
 border-radius: 75%;
-height: 200px;
-width: 200px;
+height: 300px;
+width: 300px;
 object-fit: cover;
 `;
 
@@ -30,10 +30,12 @@ const Intro = ({ title }) => {
 
   return (
     <div className="body-space">
-    <h1 className="wd-position" style={{textAlign: "center"}}>{title}</h1>
+      <br/>
+      <br/>
     <Div>
     <ProfilePic src={picture} alt="Picture of William Nam-Amnath"></ProfilePic>
     </Div>
+    <h1 className="wd-position" style={{textAlign: "center"}}>{title}</h1>
     <div className="intro-text">
     <h2 style={{textAlign: "center"}}>Hello! My name is William Nam-Amnath. I am a web developer that has applied knowledge in both the front end, as well as the back end.</h2>
     <br/>

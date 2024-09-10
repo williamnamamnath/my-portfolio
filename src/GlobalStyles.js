@@ -13,7 +13,7 @@ html, body {
 
 body {
     margin: 0;
-    background-color: #FCDDBC;
+    background-color: #FEF8EB;
     font-family: "Noto Sans Display";
 }
 
@@ -208,8 +208,7 @@ label {
 }
 
 .nav {
-    background-color: #333;
-    color: white;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
     display: flex; 
     justify-content: space-between;
     align-items: center;
