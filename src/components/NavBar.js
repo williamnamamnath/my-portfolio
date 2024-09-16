@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import logo from "../images/icons8-w-48.png";
+
 const NavBarLinks = styled.a`
 font-size: larger;
 `
@@ -8,7 +10,7 @@ const NavBar = () => {
     return (
         <>
         <nav className="nav">
-            <a href="/" className="name-title">William Nam-Amnath</a>
+            <a href="/" className="name-title"><img src={logo} alt="Logo of William Nam-Amnath's Portfolio"></img></a>
             <ul>
               <li>
                 <NavBarLinks href="https://github.com/williamnamamnath" className="links">Github</NavBarLinks>

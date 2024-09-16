@@ -12,9 +12,13 @@ html, body {
 }
 
 body {
+    background-color: #04151f;
     margin: 0;
-    background-color: #FEF8EB;
-    font-family: "Noto Sans Display";
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;    
+    color: #efd6ac;
 }
 
 h1 {
@@ -23,14 +27,12 @@ h1 {
     text-align: center;
     align-items: center;
     font-size: 75px;
-    text-decoration: underline;
 }
 
 h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: auto;
 }
 
 h3 {
@@ -45,13 +47,6 @@ h4 {
     justify-content: center;
     text-align: center;
     align-items: center;
-}
-
-p {
-    display: flex;
-    font-size: 23px;
-    flex-wrap: wrap;
-    text-align: center;
 }
 
 .tech-stack {
@@ -208,7 +203,7 @@ label {
 }
 
 .nav {
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.2);
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -258,6 +253,11 @@ body {
     flex-wrap: wrap;
     font-size: 75px;
 }
+
+.ul-btn {
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
 
 @media all and (min-width: 360px) {
