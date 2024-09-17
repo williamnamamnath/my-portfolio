@@ -3,8 +3,8 @@ import { useEffect } from "react";
 
 import "../GlobalStyles";
 
-import game from "../images/game-screenshot.PNG";
-import reactImg from "../images/react-intro.PNG";
+import Projects from "./Projects";
+
 import styled from "styled-components";
 import picture from "../images/profile-picture.jpg";
 import email from "../images/134146_mail_email_icon.png";
@@ -20,21 +20,21 @@ const Div = styled.div`
   padding: 20px;
 `
 
-
 const ParentDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   `
-  const ChildDiv = styled.div`
-    display:inline-block;
-    box-shadow: 0 2px 20px 0 #efd6ac;
-    color: black;
-    background-color: #efd6ac;
-    border-radius: 30px;
-    margin: 20px;
-    padding: 15px;
-  `
+
+const NameCard = styled.div`
+display:inline-block;
+box-shadow: 0 2px 20px 0 #efd6ac;
+color: black;
+background-color: #efd6ac;
+border-radius: 30px;
+margin: 20px;
+padding: 15px;
+`
 
 const Picture = styled.img`
   box-shadow: 0 2px 20px 0 #efd6ac;
@@ -60,16 +60,16 @@ const Intro = ({ title }) => {
       <br/>
 
       <ParentDiv>    
-    <ChildDiv>
-    <h1 className="wd-position" style={{textAlign: "center", fontSize: "60px", fontWeight: "600"}}>{title}</h1>
-    <h2 style={{textAlign: "center"}}>▶ Full-Stack Web Developer ◀</h2>
-    <h3>📍Montreal, QC</h3> 
-    <div className="socials">
-    <a href="https://github.com/williamnamamnath"><img src={github} alt="github logo"/></a>
-    <a href="https://www.linkedin.com/in/william-nam-amnath/"><img src={linkedin} alt="linkedin logo"/></a>
-    <a href="mailto:william.nam-amnath@mail.mcgill.ca"><img src={email} alt="email logo"/></a>
-    </div>
-    </ChildDiv>
+    <NameCard>
+      <h1 className="wd-position" style={{textAlign: "center", fontSize: "60px", fontWeight: "600"}}>{title}</h1>
+      <h2 style={{textAlign: "center"}}>▶ Full-Stack Web Developer ◀</h2>
+      <h3>📍 Montreal, QC</h3> 
+      <div className="socials">
+      <a className="github" href="https://github.com/williamnamamnath"><img src={github} alt="github logo"/></a>
+      <a className="linkedin" href="https://www.linkedin.com/in/william-nam-amnath/"><img src={linkedin} alt="linkedin logo"/></a>
+      <a className="email" href="mailto:william.nam-amnath@mail.mcgill.ca"><img src={email} alt="email logo"/></a>
+      </div>
+    </NameCard>
     <Div>
     <Picture src={picture} alt="Picture of William Nam-Amnath"></Picture>
     </Div>
@@ -78,9 +78,10 @@ const Intro = ({ title }) => {
     <div className="intro-text">
       <h2 style={{textAlign: "center"}}>I am a web developer with experience working in both the frontend and the backend.</h2>
     <br/>
-    <h3 style={{textAlign: "center"}}>I have experience with the following tech stack:</h3>
     <br/>
     </div>
+    <h3 style={{textAlign: "center"}}>I have experience with the following tech stack:</h3>
+    <ParentDiv>
     <div className="tech-stack">
     <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
@@ -89,6 +90,7 @@ const Intro = ({ title }) => {
     <TechStack className="devicon-mongodb-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-nodejs-plain-wordmark colored"></TechStack>
     </div>
+    </ParentDiv>
     <br/>
     <br/>
     <br/>
@@ -98,33 +100,8 @@ const Intro = ({ title }) => {
     <br/>
     <br/>
 
-    <h1>My Projects 💻</h1>
-    <ParentDiv>
-      <ChildDiv>
-    <h2>🌟 NFIB - Freelance Project</h2>
-        <Picture src={game} alt="Nyan Cat Project" className="pj-img1"></Picture>
-      </ChildDiv>
-    </ParentDiv>
-    <br/>
+    <Projects />
 
-    <ParentDiv>
-      <ChildDiv>
-    <h2>🌟 Nutrissence</h2>
-        <Picture src={game} alt="Nyan Cat Project" className="pj-img1"></Picture>
-      </ChildDiv>
-    </ParentDiv>
-    <br/>
-
-    <ParentDiv>
-      <ChildDiv>
-    <h2>🌟 E-Wear Emporium - Team Project</h2>
-        <Picture src={reactImg} alt="React Workshop" className="pj-img2"></Picture>
-      </ChildDiv>
-    </ParentDiv>
-
-    <br/>
-    <h3>More projects will be added soon!</h3>
-    <br/>
     </div>
   );
 }

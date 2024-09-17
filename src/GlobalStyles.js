@@ -49,17 +49,21 @@ h4 {
     align-items: center;
 }
 
+.more-info {
+    display: none;
+}
+
 .tech-stack {
     display: flex; 
     justify-content: center;
     align-items: center;
     gap: 2rem;
     box-shadow: 0 2px 20px 0 #efd6ac;
-    color: black;
+    color: #efd6ac;
     background-color: black;
     border-radius: 40px;
-    margin: 20px;
-    padding: 15px;
+    margin: 30px;
+    padding: 25px;
 }
 
 .socials {
@@ -72,6 +76,37 @@ h4 {
     border-radius: 30px;
     margin: 20px;
     padding: 15px;
+}
+
+.project-stack {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: black;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.github, 
+.linkedin,
+.email {
+    transition: transform 0.3s ease;
+
+&:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+}
+
+.div-inner {
+    margin: 20px;
+    padding: 15px;
+}
+
+.project-link {
+    color: #efd6ac;
 }
 
 .body-space {
