@@ -2,8 +2,10 @@ const Footer = () => {
 
     return (
         <>
-            <footer>
-                William Nam-Amnath 2024
+            <footer className="footer">
+                <span>
+                © William Nam-Amnath
+                </span>
             </footer>
         </>
     )

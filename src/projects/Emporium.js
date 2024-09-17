@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../components/NavBar";
 
 import styled from "styled-components";
 import projectEmporium from "../images/Emporium-home-page.JPG";
@@ -43,6 +44,7 @@ const Emporium = () => {
 
     return (
         <>
+        <Navbar />
             <div className="popup-window">
                 <h1><span style={{textDecoration: "underline"}}>E-Wear Emporium</span> 🏬</h1>
                 <br/>

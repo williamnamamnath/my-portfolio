@@ -8,6 +8,9 @@ import NFIB from "../projects/NFIB";
 import Nutrissence from "../projects/Nutrissence";
 import Emporium from "../projects/Emporium";
 import ErrorPage from "./ErrorPage";
+import Footer from "./Footer";
+
+
 import GlobalStyles from "../GlobalStyles";
 
 
@@ -26,6 +29,7 @@ const App = () => {
                 <Route path="/emporium" element={<Emporium />} />
                 <Route path="/*" element={<ErrorPage />} />
             </Routes>
+            <Footer />
         </Router>
     )
 };

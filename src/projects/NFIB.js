@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../components/NavBar";
 
 import styled from "styled-components";
 import projectNFIB from "../images/NFIB-home-page.JPG";
@@ -43,6 +44,7 @@ const NFIB = () => {
 
     return (
         <>
+        <Navbar />
             <div className="popup-window">
             <h1><span style={{textDecoration: "underline"}}>NFIB</span> 🧬</h1>
             <h3>(Still in progress! 🛠)</h3>

@@ -256,11 +256,8 @@ label {
 
 .nav {
     box-shadow: 0 2px 20px 0 rgba(0,0,0,.2);
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
     gap: 10px;
-    padding: 0 2rem;
+    padding: 15px;
     flex-wrap: wrap;
 }
 
@@ -274,10 +271,12 @@ label {
     text-decoration: underline;
 }
 
-.nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+.footer {
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.2);
+    font-size: 15px;
+    gap: 10px;
+    padding: 15px;
+    flex-wrap: wrap;
 }
 
 @media all and (min-width: 969px) {

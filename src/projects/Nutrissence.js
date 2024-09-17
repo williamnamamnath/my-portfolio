@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../components/NavBar";
 
 import styled from "styled-components";
 import projectNutrissence from "../images/Nutrissence-home-page.JPG";
@@ -43,6 +44,7 @@ const Nutrissence = () => {
 
     return (
         <>
+        <Navbar />
             <div className="popup-window">
             <h1><span style={{textDecoration: "underline"}}>Nutrissence</span> 🍃</h1>
             <br/>
