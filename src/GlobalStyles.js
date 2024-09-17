@@ -12,12 +12,12 @@ html, body {
 }
 
 body {
-    background-color: #04151f;
+    background-color: #343a40;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500px;
-    font-style: normal;    
+    font-style: normal;  
     color: #efd6ac;
 }
 
@@ -54,7 +54,24 @@ h4 {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 0 2rem;
+    box-shadow: 0 2px 20px 0 #efd6ac;
+    color: black;
+    background-color: black;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.socials {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 2px 20px 0 #efd6ac;
+    color: black;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 15px;
 }
 
 .body-space {
@@ -250,8 +267,11 @@ body {
 }
 
 .wd-position {
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
     flex-wrap: wrap;
-    font-size: 75px;
 }
 
 .ul-btn {
@@ -259,6 +279,10 @@ body {
         align-items: center;
     }
 }
+
+.tech-stack {
+        flex-wrap: wrap;
+    }
 
 @media all and (min-width: 360px) {
 
@@ -268,6 +292,7 @@ body {
 
     .tech-stack {
         flex-wrap: wrap;
+        margin: 0;
     }
 
     .ul-btn {
@@ -342,6 +367,11 @@ body {
     }
 
     .wd-position {
+        font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
     flex-wrap: wrap;
     font-size: 50px;
 }
