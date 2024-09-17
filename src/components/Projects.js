@@ -62,7 +62,6 @@ const Projects = () => {
       <ChildDiv onClick={handleClickNFIB}>
     <h2>🌟 NFIB - Freelance Project</h2>
         <Picture src={nf1} alt="NFIB preview" className="pj-img1"></Picture>
-        <p className="more-info"><i>Click me for more info!</i></p>
       </ChildDiv>
     </ParentDiv>
     <br/>
@@ -71,7 +70,6 @@ const Projects = () => {
       <ChildDiv onClick={handleClickNutrissence}>
     <h2>🌟 Nutrissence</h2>
         <Picture src={nutr} alt="Nutrissence preview" className="pj-img1"></Picture>
-        <p className="more-info"><i>Click me for more info!</i></p>   
       </ChildDiv>
       </ParentDiv>
     <br/>
@@ -80,7 +78,6 @@ const Projects = () => {
       <ChildDiv onClick={handleClickEmporium}>
     <h2>🌟 E-Wear Emporium - Team Project</h2>
         <Picture src={empo} alt="E-Wear Emporium preview" className="pj-img2"></Picture>
-        <p className="more-info"><i>Click me for more info!</i></p>
       </ChildDiv>
     </ParentDiv>
 

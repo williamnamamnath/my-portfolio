@@ -40,6 +40,23 @@ const TechStack = styled.i`
 font-size: 75px;
 `
 
+const Paragraph = styled.p`
+font-size: large;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    line-height: 1.5;
+`
+
+const H3 = styled.h3`
+    text-align: left;
+    text-decoration: underline;
+`
+
+const LI = styled.li`
+    line-height: 1.5;
+`
+
 const Emporium = () => {
 
     return (
@@ -53,31 +70,38 @@ const Emporium = () => {
                 </ImgDiv>
                 <a className="project-link" href="https://github.com/williamnamamnath/project-GROUP-e-commerce" target="_blank" rel="noopener noreferrer"><h2>Click here for more info!</h2></a>
                     <div className="div-inner">
-                        <h3 style={{textAlign: "left"}}>Responsibilities:</h3>
+                        <H3>What is Project E-Wear Emporium?</H3>
+                        <Paragraph>
+                            Project E-Wear Emporium is a group assignment that was worked on during the Web Development Bootcamp program. In teams of 4, we were tasked with creating a full-stack e-commerce website based on a common list of fitness brands and products for every team. How we display those products on the frontend and how we store them in the backend was up to each team to figure out how they wanted to go about it. 
+                        </Paragraph>
+                        <Paragraph>
+                            It is important to note that users will not actually be able to buy the products displayed on E-Wear Emporium, but they will be able to sign up or login and add items to their cart. Each user is stored in our MongoDB database, so they know that our website and their information is secure and in good hands.  
+                        </Paragraph>
+                        <H3>Responsibilities:</H3>
                         <ul>
-                            <li>
+                            <LI>
                             Collaborated on a group project to create a full-stack e-commerce application using the MERN stack
-                            </li>
+                            </LI>
                             <br/>
-                            <li>
+                            <LI>
                             Orchestrated the general layout for the frontend:
                             <ul>
-                                <li>
+                                <LI>
                                 Created the brand name of our website
-                                </li>
-                                <li>
+                                </LI>
+                                <LI>
                                 Proposed the current design of E-Wear Emporium
-                                </li>
+                                </LI>
                             </ul>
-                            </li>
+                            </LI>
                             <br/>
-                            <li>
+                            <LI>
                             Created the customer service pages to look as authentic to a real brand as possible
-                            </li>
+                            </LI>
                             <br/>
-                            <li>
+                            <LI>
                             Implemented authentication and authorization features to ensure secure access to family accounts and data privacy
-                            </li>
+                            </LI>
                         </ul>
                     </div>
                     <ParentDiv>

@@ -49,10 +49,6 @@ h4 {
     align-items: center;
 }
 
-.more-info {
-    display: none;
-}
-
 .tech-stack {
     display: flex; 
     justify-content: center;

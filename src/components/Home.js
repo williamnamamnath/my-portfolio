@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"; 
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "../GlobalStyles";
 
@@ -36,6 +36,22 @@ margin: 20px;
 padding: 15px;
 `
 
+const MoreInfo = styled.div`
+display:inline-block;
+box-shadow: 0 2px 20px 0 #efd6ac;
+color: black;
+background-color: #efd6ac;
+border-radius: 30px;
+margin: 20px;
+padding: 15px;
+transition: transform 0.3s ease;
+
+&:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+`
+
 const Picture = styled.img`
   box-shadow: 0 2px 20px 0 #efd6ac;
   border-radius: 10px;
@@ -53,6 +69,12 @@ const Intro = ({ title }) => {
   useEffect(() => {
     document.title = "William Nam-Amnath | My Portfolio"
 }, []);
+
+const navigate = useNavigate();
+
+const handleClick = () => {
+  navigate('/about'); 
+};
 
   return (
     <div className="body-space">
@@ -94,12 +116,20 @@ const Intro = ({ title }) => {
     <br/>
     <br/>
     <br/>
-    <ul className="ul-btn">
-    <Link to="/about" style={{color:"black", fontWeight:"bold", textDecoration:"none"}}><button className="website-btn">Learn more about me</button></Link>
-    </ul>
+    <ParentDiv>
+      <MoreInfo onClick={handleClick}>
+        <h2>Learn More About Me! 👨‍💻</h2>
+      </MoreInfo>
+    </ParentDiv>
     <br/>
     <br/>
-
+    <br/>
+    <br/>
+    <hr style={{width: "50%"}}/>    
+    <br/>
+    <br/>    
+    <br/>
+    <br/>
     <Projects />
 
     </div>

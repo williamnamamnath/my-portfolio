@@ -40,6 +40,23 @@ const TechStack = styled.i`
 font-size: 75px;
 `
 
+const LI = styled.li`
+    line-height: 1.5;
+`
+
+const Paragraph = styled.p`
+font-size: large;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    line-height: 1.5;
+`
+
+const H3 = styled.h3`
+    text-align: left;
+    text-decoration: underline;
+`
+
 const NFIB = () => {
 
     return (
@@ -54,15 +71,25 @@ const NFIB = () => {
                 </ImgDiv>
                 <a className="project-link" href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer"><h2>Click here for more info!</h2></a>
                     <div className="div-inner">
-                    <h3 style={{textAlign: "left"}}>Responsibilities:</h3>
+                        <H3>What is Project NFIB?</H3>
+                        <Paragraph>
+                            Project NFIB is a freelance project that was proposed to me by one of the medical geneticists that I work with at the Montreal University Health Centre (MUHC) from the genetics department.
+                        </Paragraph> 
+                            <Paragraph>
+                                The goal of this website is to provide more information on how the pediatric and adult clinics work. NFIB or NF1, which stand for Neurofibromatosis or Neurofibromatosis Type 1 respectively, is still a genetic disease that needs more discussion as it is not talked about enough.
+                            </Paragraph> 
+                            <Paragraph>
+                                With the help of this website, patients and their families will be able to get more information on NFIB/NF1 and how to send their referrals to the genetics department at the MUHC among other benefits. 
+                            </Paragraph>
+                    <H3>Responsibilities:</H3>
                         <ul>
-                            <li>
+                            <LI>
                             Created for the neurofibromatosis (NFIB) team, a sub-department of medical genetics at the Montreal University Health Centre (MUHC), at the request of one of the medical geneticists
-                            </li>
+                            </LI>
                             <br/>
-                            <li>
+                            <LI>
                             Frontend-based website with the goal of illustrating the NFIB team at the MUHC and to describe this genetic disease
-                            </li>
+                            </LI>
                         </ul>
                     </div>
                     <br/>
