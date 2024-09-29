@@ -13,7 +13,7 @@ const ParentDiv = styled.div`
   `
   const ChildDiv = styled.div`
     display:inline-block;
-    box-shadow: 0 2px 20px 0 #efd6ac;
+    box-shadow: 0 2px 20px 0 gray;
     color: black;
     background-color: #efd6ac;
     border-radius: 30px;
@@ -33,6 +33,10 @@ const Picture = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
+`
+
+const H2 = styled.h2`
+  text-align: center;
 `
 
 const Projects = () => {
@@ -60,7 +64,8 @@ const Projects = () => {
     <h1>My Projects 💻</h1>
     <ParentDiv>
       <ChildDiv onClick={handleClickNFIB}>
-    <h2>🌟 NFIB - Freelance Project</h2>
+    <H2>🌟 <span style={{textDecoration: "underline"}}>NFIB</span></H2>
+    <h3>Freelance Project</h3>
         <Picture src={nf1} alt="NFIB preview" className="pj-img1"></Picture>
       </ChildDiv>
     </ParentDiv>
@@ -68,7 +73,7 @@ const Projects = () => {
 
     <ParentDiv>
       <ChildDiv onClick={handleClickNutrissence}>
-    <h2>🌟 Nutrissence</h2>
+    <H2>🌟 <span style={{textDecoration: "underline"}}>Nutrissence</span></H2>
         <Picture src={nutr} alt="Nutrissence preview" className="pj-img1"></Picture>
       </ChildDiv>
       </ParentDiv>
@@ -76,7 +81,8 @@ const Projects = () => {
 
     <ParentDiv>
       <ChildDiv onClick={handleClickEmporium}>
-    <h2>🌟 E-Wear Emporium - Team Project</h2>
+    <H2>🌟 <span style={{textDecoration: "underline"}}>E-Wear Emporium</span></H2>
+    <h3>Team Project</h3>
         <Picture src={empo} alt="E-Wear Emporium preview" className="pj-img2"></Picture>
       </ChildDiv>
     </ParentDiv>

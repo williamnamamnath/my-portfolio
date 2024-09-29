@@ -1,15 +1,33 @@
 import React from "react";
-import Navbar from "../components/NavBar";
 
 import styled from "styled-components";
 import projectNFIB from "../images/NFIB-home-page.JPG";
 
 const Picture = styled.img`
-  box-shadow: 0 2px 20px 0 #efd6ac;
-  border-radius: 10px;
+  box-shadow: 0 2px 15px 0 gray;
+  border-radius: 15px;
   height: 60%;
   width: 60%;
   object-fit: fill;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    height: 90%;
+    width: 90%;
+  }
+`
+
+const H1 = styled.h1`
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  flex-wrap: wrap;
+  
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 40px;
+    font-weight: 600;
+  flex-wrap: wrap;
+  }
 `
 
 const ImgDiv = styled.div`
@@ -26,9 +44,9 @@ const ParentDiv = styled.div`
 
 const NameCard = styled.div`
 display: block;
-box-shadow: 0 2px 20px 0 #efd6ac;
-color: #efd6ac;
-background-color: black;
+//box-shadow: 0 2px 20px 0 #efd6ac;
+color: black;
+//background-color: black;
 border-radius: 30px;
 margin: 20px 40px;
 padding: 15px 30px;
@@ -38,54 +56,89 @@ justify-content: center;
 
 const TechStack = styled.i`
 font-size: 75px;
+background-color: black;
+padding: 5px;
+border-radius: 10px;
+
+@media all and (min-width: 360px) and (max-width: 969px) {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
 `
 
 const LI = styled.li`
     line-height: 1.5;
+    font-size: 20px;
+    font-weight: 550;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 20px;
+  }
 `
 
 const Paragraph = styled.p`
-font-size: large;
+    font-size: large;
+    font-weight: 550;
     text-align: justify;
     margin: 20px;
     padding: 15px;
     line-height: 1.5;
+
+    @media all and (min-width: 360px) and (max-width: 969px) {
+    margin: 15px;
+    padding: 5px;
+  flex-wrap: wrap;
+  }
 `
 
 const H3 = styled.h3`
     text-align: left;
+`
+
+const H2 = styled.h2`
     text-decoration: underline;
+    text-align: center;
+`
+
+const SecondH2 = styled.h2`
+    text-align: center;
+`
+
+const PageSpacing = styled.div`
+  margin: 100px 0 100px 0;
 `
 
 const NFIB = () => {
 
     return (
         <>
-        <Navbar />
+        <PageSpacing>
             <div className="popup-window">
-            <h1><span style={{textDecoration: "underline"}}>NFIB</span> 🧬</h1>
-            <h3>(Still in progress! 🛠)</h3>
+            <H1>
+            <a className="project-link" href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer">
+              <span style={{textDecoration: "underline"}}>NFIB </span> 🧬
+              </a>
+              </H1>
             <br/>
                 <ImgDiv>
-                <Picture src={projectNFIB} alt="Picture of NFIB Home Page"></Picture>
+                <a className="project-link" href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer">
+                <Picture src={projectNFIB} alt="Picture of NFIB Home Page"></Picture></a>
                 </ImgDiv>
-                <a className="project-link" href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer"><h2>Click here for more info!</h2></a>
+                <br/>
                     <div className="div-inner">
-                        <H3>What is Project NFIB?</H3>
+                        <SecondH2>What is Project NFIB (neurofibromatosis)?</SecondH2>
                         <Paragraph>
-                            Project NFIB is a freelance project that was proposed to me by one of the medical geneticists that I work with at the Montreal University Health Centre (MUHC) from the genetics department.
+                            Project NFIB is a freelance project that was proposed to me by one of the medical geneticists that I work with at the Montreal University Health Centre (MUHC).
                         </Paragraph> 
+                        <br/>
                             <Paragraph>
-                                The goal of this website is to provide more information on how the pediatric and adult clinics work. NFIB or NF1, which stand for Neurofibromatosis or Neurofibromatosis Type 1 respectively, is still a genetic disease that needs more discussion as it is not talked about enough.
-                            </Paragraph> 
-                            <Paragraph>
-                                With the help of this website, patients and their families will be able to get more information on NFIB/NF1 and how to send their referrals to the genetics department at the MUHC among other benefits. 
+                                With the help of this website, patients and their families will be able to get more information on the genetic disease known as neurofibromatosis type 1 (NFIB/NF1), what are the related symptoms and treatment how to send referrals to the genetics department at the MUHC. 
                             </Paragraph>
+                            <br/>
                     <H3>Responsibilities:</H3>
                         <ul>
-                            <LI>
-                            Created for the neurofibromatosis (NFIB) team, a sub-department of medical genetics at the Montreal University Health Centre (MUHC), at the request of one of the medical geneticists
-                            </LI>
                             <br/>
                             <LI>
                             Frontend-based website with the goal of illustrating the NFIB team at the MUHC and to describe this genetic disease
@@ -95,7 +148,7 @@ const NFIB = () => {
                     <br/>
                     <ParentDiv>
                     <NameCard>
-                        <h2>Technologies Used:</h2>
+                        <H2>Technologies Used:</H2>
                         <div className="project-stack">
                         <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
@@ -104,6 +157,7 @@ const NFIB = () => {
                     </NameCard>
                     </ParentDiv>
             </div>
+        </PageSpacing>
         </>
     )
 }

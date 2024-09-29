@@ -1,15 +1,19 @@
 import React from "react";
-import Navbar from "../components/NavBar";
 
 import styled from "styled-components";
 import projectNutrissence from "../images/Nutrissence-home-page.JPG";
 
 const Picture = styled.img`
-  box-shadow: 0 2px 20px 0 #efd6ac;
-  border-radius: 10px;
+  box-shadow: 0 2px 15px 0 gray;
+  border-radius: 15px;
   height: 60%;
   width: 60%;
   object-fit: fill;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    height: 90%;
+    width: 90%;
+  }
 `
 
 const ImgDiv = styled.div`
@@ -26,9 +30,9 @@ const ParentDiv = styled.div`
 
 const NameCard = styled.div`
 display: block;
-box-shadow: 0 2px 20px 0 #efd6ac;
-color: #efd6ac;
-background-color: black;
+//box-shadow: 0 2px 20px 0 #efd6ac;
+color: black;
+//background-color: black;
 border-radius: 30px;
 margin: 20px 40px;
 padding: 15px 30px;
@@ -38,50 +42,107 @@ justify-content: center;
 
 const TechStack = styled.i`
 font-size: 75px;
+background-color: black;
+padding: 5px;
+border-radius: 10px;
+
+@media all and (min-width: 360px) and (max-width: 969px) {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
 `
 
 const Paragraph = styled.p`
-font-size: large;
+    font-size: 50px;
     text-align: justify;
     margin: 20px;
     padding: 15px;
     line-height: 1.5;
+    font-weight: 550;
+
+    @media all and (min-width: 360px) {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: auto;
+    padding: 0%;
+    }
 `
 
 const H3 = styled.h3`
     text-align: left;
-    text-decoration: underline;
 `
 
 const LI = styled.li`
     line-height: 1.5;
+    font-size: 20px;
+    font-weight: 550;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 20px;
+  }
+`
+
+const H2 = styled.h2`
+    text-decoration: underline;
+    text-align: center;
+`
+
+const SecondH2 = styled.h2`
+    text-align: center;
+`
+
+const H1 = styled.h1`
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  flex-wrap: wrap;
+  
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 40px;
+    font-weight: 600;
+  flex-wrap: wrap;
+  }
+`
+
+const PageSpacing = styled.div`
+  margin: 100px 0 100px 0;
 `
 
 const Nutrissence = () => {
 
     return (
         <>
-        <Navbar />
+        <PageSpacing>
             <div className="popup-window">
-            <h1><span style={{textDecoration: "underline"}}>Nutrissence</span> 🍃</h1>
+            <H1>
+            <a className="project-link" href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer">
+              <span style={{textDecoration: "underline"}}>Nutrissence </span> 🍃
+              </a>
+              </H1>
             <br/>
                 <ImgDiv>
-                <Picture src={projectNutrissence} alt="Picture of Nutrissence Home Page"></Picture>
+                <a className="project-link" href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer">
+                <Picture src={projectNutrissence} alt="Picture of Nutrissence Home Page"></Picture></a>
                 </ImgDiv>
-                <a className="project-link" href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer"><h2>Click here for more info!</h2></a>
+                    <br/>
                     <div className="div-inner">
-                        <H3>What is Project Nutrissence?</H3>
+                        <SecondH2>What is Project Nutrissence?</SecondH2>
                         <Paragraph>
-                            Nutrissence is the final project that I worked on for the Web Development bootcamp program in May 2024. The guidelines were fairly simple: to create any kind of full-stack website of your choosing as long as you use an API and use the big concepts that were covered throughout the bootcamp.
+                          <br/>
+                            As someone that takes his health seriously, I wanted to create a resource that provides users with valuable intel on what they can consume depending on the type of diet they would like to follow. 
                         </Paragraph>
+                        <br/>
                         <Paragraph>
-                            As someone that takes his health and diet seriously, I struggled finding resources that were easy to understand or even easy to access. Of course, there are many resources available but personally, and once can even just read the nutritional facts about the food that they buy but that's not the easiest thing do. 
+                            Simply put, Nutrissence is a recipe search engine. Each recipe will display essential information that will give clients a better understanding of what can eat or what they should avoid. ***Insert screenshot of recipe details  
                         </Paragraph>
+                        <br/>
                         <Paragraph>
-                            This is where Nutrissence comes in. Simply put, this resource is a recipe search engine. Users simply have to search a specific ingredient such as "avocado" and the results will return recipes that include avocado in the ingredients list. 
+                            And the best part, this website is FREE to use! You simply need to create an account and you'll be able to get started 😊
                         </Paragraph>
-                            <Paragraph>My goal for this project was to help the general consumer by informing on what specific recipes are good for and which recipes they should avoid.
-                        </Paragraph> 
+                        <br/>
                     <H3>Responsibilities:</H3>
                         <ul>
                             <LI>
@@ -95,7 +156,7 @@ const Nutrissence = () => {
                     </div>
                     <ParentDiv>
                     <NameCard>
-                        <h2 style={{textDecoration: "underline"}}>Technologies Used:</h2>
+                        <H2>Technologies Used:</H2>
                         <div className="project-stack">
                         <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
@@ -107,6 +168,7 @@ const Nutrissence = () => {
                     </NameCard>
                     </ParentDiv>
             </div>
+        </PageSpacing>
         </>
     )
 }

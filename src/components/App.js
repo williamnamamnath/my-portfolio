@@ -8,7 +8,9 @@ import NFIB from "../projects/NFIB";
 import Nutrissence from "../projects/Nutrissence";
 import Emporium from "../projects/Emporium";
 import ErrorPage from "./ErrorPage";
+import NavBar from "./NavBar";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
 
 import GlobalStyles from "../GlobalStyles";
@@ -18,9 +20,11 @@ const App = () => {
 
     return (
         <Router>
+            <ScrollToTop />
+            <NavBar />
             <GlobalStyles />
             <Routes>
-                <Route path="/" element={<Home title="William Nam-Amnath"/>} />
+                <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutMe />} />
                 <Route path="/languages" element={<WebLanguages />} />
                 <Route path="/projects" element={<Projects />} />

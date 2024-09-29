@@ -1,15 +1,19 @@
 import React from "react";
-import Navbar from "../components/NavBar";
 
 import styled from "styled-components";
 import projectEmporium from "../images/Emporium-home-page.JPG";
 
 const Picture = styled.img`
-  box-shadow: 0 2px 20px 0 #efd6ac;
-  border-radius: 10px;
-  height: 60%;
-  width: 60%;
+  box-shadow: 0 2px 15px 0 gray;
+  border-radius: 15px;
+  height: 50%;
+  width: 50%;
   object-fit: fill;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    height: 90%;
+    width: 90%;
+  }
 `
 
 const ImgDiv = styled.div`
@@ -26,9 +30,9 @@ const ParentDiv = styled.div`
 
 const NameCard = styled.div`
 display: block;
-box-shadow: 0 2px 20px 0 #efd6ac;
-color: #efd6ac;
-background-color: black;
+//box-shadow: 0 2px 20px 0 #efd6ac;
+color: black;
+//background-color: black;
 border-radius: 30px;
 margin: 20px 40px;
 padding: 15px 30px;
@@ -38,45 +42,99 @@ justify-content: center;
 
 const TechStack = styled.i`
 font-size: 75px;
+background-color: black;
+padding: 5px;
+border-radius: 10px;
+
+@media all and (min-width: 360px) and (max-width: 969px) {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
 `
 
 const Paragraph = styled.p`
-font-size: large;
+    font-size: 50px;
     text-align: justify;
     margin: 20px;
     padding: 15px;
     line-height: 1.5;
+    font-weight: 550;
+
+    @media all and (min-width: 360px) {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: auto;
+    padding: 0%;
+    }
 `
 
 const H3 = styled.h3`
     text-align: left;
-    text-decoration: underline;
 `
 
 const LI = styled.li`
     line-height: 1.5;
+    font-size: 20px;
+    font-weight: 550;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 20px;
+  }
+`
+
+const H1 = styled.h1`
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  flex-wrap: wrap;
+  
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 40px;
+    font-weight: 600;
+  flex-wrap: wrap;
+  }
+`
+
+const H2 = styled.h2`
+    text-decoration: underline;
+    text-align: center;
+`
+
+const SecondH2 = styled.h2`
+    text-align: center;
+`
+
+const PageSpacing = styled.div`
+  margin: 100px 0 100px 0;
 `
 
 const Emporium = () => {
 
     return (
         <>
-        <Navbar />
+        <PageSpacing>
             <div className="popup-window">
-                <h1><span style={{textDecoration: "underline"}}>E-Wear Emporium</span> 🏬</h1>
+            <H1>
+            <a className="project-link" href="https://github.com/williamnamamnath/project-GROUP-e-commerce" target="_blank" rel="noopener noreferrer">
+              <span style={{textDecoration: "underline"}}>E-Wear Emporium </span> 🏬
+              </a>
+              </H1>
                 <br/>
                 <ImgDiv>
-                <Picture src={projectEmporium} alt="Picture of E-Wear Emporium" href="https://github.com/williamnamamnath/project-GROUP-e-commerce"></Picture>
+                <a className="project-link" href="https://github.com/williamnamamnath/project-GROUP-e-commerce" target="_blank" rel="noopener noreferrer">
+                <Picture src={projectEmporium} alt="Picture of E-Wear Emporium"></Picture></a>
                 </ImgDiv>
-                <a className="project-link" href="https://github.com/williamnamamnath/project-GROUP-e-commerce" target="_blank" rel="noopener noreferrer"><h2>Click here for more info!</h2></a>
+                    <br/>
                     <div className="div-inner">
-                        <H3>What is Project E-Wear Emporium?</H3>
+                        <SecondH2>What is Project E-Wear Emporium?</SecondH2>
                         <Paragraph>
-                            Project E-Wear Emporium is a group assignment that was worked on during the Web Development Bootcamp program. In teams of 4, we were tasked with creating a full-stack e-commerce website based on a common list of fitness brands and products for every team. How we display those products on the frontend and how we store them in the backend was up to each team to figure out how they wanted to go about it. 
+                            Project E-Wear Emporium is a group project, with tasks divided between 4 team members. The objective of this e-commerce website is to display fitness products
                         </Paragraph>
-                        <Paragraph>
-                            It is important to note that users will not actually be able to buy the products displayed on E-Wear Emporium, but they will be able to sign up or login and add items to their cart. Each user is stored in our MongoDB database, so they know that our website and their information is secure and in good hands.  
-                        </Paragraph>
+                        <br/>
+                        <br/>
                         <H3>Responsibilities:</H3>
                         <ul>
                             <LI>
@@ -106,7 +164,7 @@ const Emporium = () => {
                     </div>
                     <ParentDiv>
                     <NameCard>
-                        <h2 style={{textDecoration: "underline"}}>Technologies Used:</h2>
+                        <H2>Technologies Used:</H2>
                         <div className="project-stack">
                         <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
@@ -118,6 +176,7 @@ const Emporium = () => {
                     </NameCard>
                     </ParentDiv>
             </div>
+        </PageSpacing>
         </>
     )
 }

@@ -12,13 +12,42 @@ import github from "../images/211904_social_github_icon.png";
 import linkedin from "../images/5296501_linkedin_network_linkedin logo_icon.png";
 
 
+const H1 = styled.h1`
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  flex-wrap: wrap;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+  font-size: 40px;
+  font-weight: 800;
+  flex-wrap: wrap;
+  }
+`
+
 const Div = styled.div`
   display:inline-block;
   justify-content: center;
   align-items: center;
   margin: 20px;
   padding: 20px;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+  margin: 15px;
+  padding: 15px;
+  }
 `
+
+const PicAndCard = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 20px 0 gray;
+  border-radius: 20px;
+  background-color: #efd6ac;
+`
+
 
 const ParentDiv = styled.div`
   display: flex;
@@ -28,17 +57,17 @@ const ParentDiv = styled.div`
 
 const NameCard = styled.div`
 display:inline-block;
-box-shadow: 0 2px 20px 0 #efd6ac;
-color: black;
+box-shadow: none;
 background-color: #efd6ac;
+color: black;
 border-radius: 30px;
-margin: 20px;
-padding: 15px;
+margin: 15px;
+padding: 10px;
 `
 
 const MoreInfo = styled.div`
 display:inline-block;
-box-shadow: 0 2px 20px 0 #efd6ac;
+box-shadow: 0 2px 20px 0 gray;
 color: black;
 background-color: #efd6ac;
 border-radius: 30px;
@@ -53,18 +82,29 @@ transition: transform 0.3s ease;
 `
 
 const Picture = styled.img`
-  box-shadow: 0 2px 20px 0 #efd6ac;
   border-radius: 10px;
-  height: 360px;
-  width: 360px;
+  height: 380px;
+  width: 380px;
   object-fit: cover;
+  
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    height: 200px;
+    width: 200px;
+  }
 `
 
 const TechStack = styled.i`
 font-size: 75px;
+background-color: black;
+padding: 5px;
+border-radius: 10px;
+
+@media all and (min-width: 360px) and (max-width: 969px) {
+  font-size: 50px;
+}
 `
 
-const Intro = ({ title }) => {
+const Intro = () => {
 
   useEffect(() => {
     document.title = "William Nam-Amnath | My Portfolio"
@@ -81,28 +121,26 @@ const handleClick = () => {
       <br/>
       <br/>
 
-      <ParentDiv>    
-    <NameCard>
-      <h1 className="wd-position" style={{textAlign: "center", fontSize: "60px", fontWeight: "600"}}>{title}</h1>
-      <h2 style={{textAlign: "center"}}>▶ Full-Stack Web Developer ◀</h2>
-      <h3>📍 Montreal, QC</h3> 
-      <div className="socials">
-      <a className="github" href="https://github.com/williamnamamnath"><img src={github} alt="github logo"/></a>
-      <a className="linkedin" href="https://www.linkedin.com/in/william-nam-amnath/"><img src={linkedin} alt="linkedin logo"/></a>
-      <a className="email" href="mailto:william.nam-amnath@mail.mcgill.ca"><img src={email} alt="email logo"/></a>
-      </div>
-    </NameCard>
+      <PicAndCard>    
     <Div>
     <Picture src={picture} alt="Picture of William Nam-Amnath"></Picture>
     </Div>
-      </ParentDiv>
+    <NameCard>
+      <H1>William <br/>Nam-Amnath</H1>
+      <h2 style={{textAlign: "center"}}>▶ Full-Stack Web Developer ◀</h2>
+      <h3>📍 Montreal, QC</h3> 
+      <div className="socials">
+      <a className="github" href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"/></a>
+      <a className="linkedin" href="https://www.linkedin.com/in/william-nam-amnath/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo"/></a>
+      <a className="email" href="mailto:william.nam-amnath@mail.mcgill.ca" target="_blank" rel="noopener noreferrer"><img src={email} alt="email logo"/></a>
+      </div>
+    </NameCard>
+      </PicAndCard>
 
-    <div className="intro-text">
-      <h2 style={{textAlign: "center"}}>I am a web developer with experience working in both the frontend and the backend.</h2>
-    <br/>
-    <br/>
-    </div>
+      <br/>
+      <br/>
     <h3 style={{textAlign: "center"}}>I have experience with the following tech stack:</h3>
+    <br/>
     <ParentDiv>
     <div className="tech-stack">
     <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
@@ -118,16 +156,13 @@ const handleClick = () => {
     <br/>
     <ParentDiv>
       <MoreInfo onClick={handleClick}>
-        <h2>Learn More About Me! 👨‍💻</h2>
+        <h3>Learn More About Me! 👨‍💻</h3>
       </MoreInfo>
     </ParentDiv>
     <br/>
     <br/>
     <br/>
-    <br/>
-    <hr style={{width: "50%"}}/>    
-    <br/>
-    <br/>    
+    <hr style={{width: "50%"}}/>        
     <br/>
     <br/>
     <Projects />

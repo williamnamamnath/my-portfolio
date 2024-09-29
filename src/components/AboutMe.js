@@ -1,16 +1,20 @@
 import { useEffect } from "react";
 
 import styled from "styled-components";
-import NavBar from "./NavBar";
 
 import banffPhoto from "../images/wnam-amnath.JPG";
 
 const Picture = styled.img`
   box-shadow: 0 2px 20px 0 #efd6ac;
   border-radius: 10px;
-  height: 20%;
-  width: 20%;
+  height: 500px;
+  width: 300px;
   object-fit: cover;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    height: 350px;
+    width: 250px;
+  }
 `
 
 const ImgDiv = styled.div`
@@ -20,61 +24,83 @@ display: flex;
 `
 
 const Paragraph = styled.p`
-font-size: large;
+    font-size: large;
+    font-weight: 550;
     text-align: justify;
     margin: 20px;
     padding: 15px;
     line-height: 1.5;
+
+    @media all and (min-width: 360px) and (max-width: 969px) {
+    margin: 15px;
+    padding: 5px;
+  flex-wrap: wrap;
+  }
 `
 
 const CenteredParagraph = styled.p`
+font-weight: 600;
     text-align: center;
     margin: 20px;
     padding: 15px;
+
+@media all and (min-width: 360px) and (max-width: 969px) {
+    margin: 10px;
+    padding: 5px;
+  flex-wrap: wrap;
+  }
 `
 
-const ListDiv = styled.div`
-display: flex;
-    align-items: center;
-    justify-content: center;
-`
-
-const ListBackground = styled.div`
-    box-shadow: 0 2px 20px 0 #efd6ac;
-    color: #efd6ac;
-    background-color: black;
-    border-radius: 30px;
-    margin: 20px 40px;
-    padding: 15px 30px;
+const H2 = styled.h2`
+    text-align: center;
+    font-style: italic;
 `
 
 const H3 = styled.h3`
-    text-align: left;
+    text-align: center;
+    font-style: italic;
 `
 
 const ParentDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
   `
+
   const ChildDiv = styled.div`
+    font-weight: 550;
     display:inline-block;
-    box-shadow: 0 2px 20px 0 #efd6ac;
+    box-shadow: 0 2px 20px 0 gray;
     color: black;
     background-color: #efd6ac;
     border-radius: 30px;
     margin: 20px;
     padding: 25px;
-    transition: transform 0.3s ease;
-
-&:hover {
-  transform: scale(1.1);
-}
   `
 
 const Anchor = styled.a`
     color: #efd6ac;
 `
+
+const H1 = styled.h1`
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  flex-wrap: wrap;
+  
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 50px;
+    font-weight: 600;
+  flex-wrap: wrap;
+  }
+`
+
+const PageSpacing = styled.div`
+  margin: 100px 0 100px 0;
+`
+
 
 const AboutMe = () => {
 
@@ -84,56 +110,28 @@ const AboutMe = () => {
 
     return (
         <>
-        <NavBar />
-        <div className="body-space">
-        <h1 style={{textDecoration: "underline"}}>About Me</h1>
+        <PageSpacing>
+        <div className="popup-window">
+        <H1>About Me 🙋‍♂️</H1>
         <ImgDiv>
         <Picture src={banffPhoto} alt="Picture of William Nam-Amnath"></Picture>
         </ImgDiv>
-        <h2>👋 Hi there! </h2>
-        <CenteredParagraph>My name is <span style={{color: "#01A7C2"}}>William Nam-Amnath</span> and I am a full-stack web developer from Montreal, Canada.</CenteredParagraph>
+        <h2 style={{fontStyle: "italic"}}>👋 Hi there! </h2>
+        <CenteredParagraph>My name is <span style={{color: "#01A7C2"}}>William Nam-Amnath</span> 
+        <br/>
+        and I am a full-stack web developer from Montreal, Canada.</CenteredParagraph>
         <Paragraph>I am a junior developer having graduated from the Concordia University Web Development bootcamp program in May 2024. Throughout the program, I learned and practiced using the following techniques stacks/concepts: </Paragraph>
-        <ListDiv>
-            <ListBackground>
-        <ul>
-            <li>
-                HTML
-            </li>
-            <br/>
-            <li>
-                CSS
-            </li>
-            <br/>
-            <li>
-                Javascript
-            </li>
-            <br/>
-            <li>
-                React
-            </li>
-            <br/>
-            <li>
-                Express.js
-            </li>
-            <br/>
-            <li>
-                Node.js
-            </li>
-            <br/>
-            <li>
-                MongoDB
-            </li>
-        </ul>
-            </ListBackground>
-        </ListDiv>
+        <br/>
         <H3>Quoi De Neuf? 🤔</H3>
         <Paragraph>
         At the moment, I currently work at the Montreal Children Hospital as an administrative agent. However, I am actively looking for a position in web development. Since graduating in May, I have taken on a freelance contract from one of the colleagues I currently work with. <Anchor href="/nfib">Feel free to take a look!</Anchor>
         </Paragraph>
+        <br/>
         <H3>Gaining New Knowledge 📚</H3>
         <Paragraph>
         During my free time, I enjoy learning and acquiring new skills. I am currently learning <span style={{color: "#01A7C2"}}>Typescript</span> and am looking forward to learning about other tech stacks and libraries. 
         </Paragraph>
+        <br/>
         <H3>My Hobbies 🏀</H3>
         <Paragraph>
         If I’m not coding, you can find me playing basketball, listening to music or watching movies. 
@@ -155,18 +153,18 @@ const AboutMe = () => {
         <h1 style={{textDecoration: "underline"}}>My Education</h1>
         <ParentDiv>
             <ChildDiv>
-                <H3><span style={{color: "#1C6E8C"}}>October 2023 - May 2024</span></H3>
+                <H2><span style={{color: "#1C6E8C"}}>October 2023 - May 2024</span></H2>
                 <ul>
-                    <li><span style={{fontWeight: "bold", textDecoration: "underline"}}>Certificate</span> from the Concordia University Web Development Bootcamp</li>
+                    <li><span style={{fontWeight: "bold"}}>Certificate</span> from the Concordia University Web Development Bootcamp</li>
                 </ul>
             </ChildDiv>
         </ParentDiv>
         <br/>
         <ParentDiv>
             <ChildDiv>
-                <H3><span style={{color: "#1C6E8C"}}>August 2017 - April 2021</span></H3>
+                <H2><span style={{color: "#1C6E8C"}}>August 2017 - April 2021</span></H2>
                 <ul>
-                    <li><span style={{fontWeight: "bold", textDecoration: "underline"}}>Bachelor</span> of Education from McGill University</li>
+                    <li><span style={{fontWeight: "bold"}}>Bachelor of Education</span> from McGill University</li>
                     <br/>
                     <ul>
                         <li>
@@ -178,6 +176,7 @@ const AboutMe = () => {
         </ParentDiv>
         <br/>
         </div>
+        </PageSpacing>
         </>
     )
 }; 
