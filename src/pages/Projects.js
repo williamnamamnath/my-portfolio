@@ -61,7 +61,7 @@ const Projects = () => {
     
     return (
         <>
-    <h1>My Projects 💻</h1>
+    <h1 style={{color: "white"}}>My Projects 💻</h1>
     <ParentDiv>
       <ChildDiv onClick={handleClickNFIB}>
     <H2>🌟 <span style={{textDecoration: "underline"}}>NFIB</span></H2>
@@ -86,9 +86,7 @@ const Projects = () => {
         <Picture src={empo} alt="E-Wear Emporium preview" className="pj-img2"></Picture>
       </ChildDiv>
     </ParentDiv>
-
     <br/>
-    <h3>More projects will be added soon!</h3>
     <br/>
         </>
     )

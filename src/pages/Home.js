@@ -12,7 +12,22 @@ import github from "../images/211904_social_github_icon.png";
 import linkedin from "../images/5296501_linkedin_network_linkedin logo_icon.png";
 
 
-const H1 = styled.h1`
+const H2 = styled.h2`
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+  flex-wrap: wrap;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+  font-size: 35px;
+  font-weight: 800;
+  flex-wrap: wrap;
+  }
+`
+
+const OtherH1 = styled.h1`
+color: #56E221;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 60px;
@@ -34,8 +49,8 @@ const Div = styled.div`
   padding: 20px;
 
   @media all and (min-width: 360px) and (max-width: 969px) {
-  margin: 15px;
-  padding: 15px;
+  margin: 20px 20px 0 20px;
+  padding: 20px 20px 0 20px;
   }
 `
 
@@ -43,9 +58,7 @@ const PicAndCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 20px 0 gray;
-  border-radius: 20px;
-  background-color: #efd6ac;
+  flex-wrap: wrap;
 `
 
 
@@ -57,9 +70,7 @@ const ParentDiv = styled.div`
 
 const NameCard = styled.div`
 display:inline-block;
-box-shadow: none;
-background-color: #efd6ac;
-color: black;
+color: white;
 border-radius: 30px;
 margin: 15px;
 padding: 10px;
@@ -82,14 +93,16 @@ transition: transform 0.3s ease;
 `
 
 const Picture = styled.img`
-  border-radius: 10px;
+  border-radius: 200px;
   height: 380px;
   width: 380px;
   object-fit: cover;
   
   @media all and (min-width: 360px) and (max-width: 969px) {
-    height: 200px;
-    width: 200px;
+    border-radius: 150px;
+    height: 250px;
+    width: 250px;
+    flex-wrap: wrap;
   }
 `
 
@@ -118,15 +131,13 @@ const handleClick = () => {
 
   return (
     <div className="body-space">
-      <br/>
-      <br/>
-
       <PicAndCard>    
     <Div>
     <Picture src={picture} alt="Picture of William Nam-Amnath"></Picture>
     </Div>
     <NameCard>
-      <H1>William <br/>Nam-Amnath</H1>
+      <H2>William</H2>
+      <OtherH1>Nam-Amnath</OtherH1>
       <h2 style={{textAlign: "center"}}>▶ Full-Stack Web Developer ◀</h2>
       <h3>📍 Montreal, QC</h3> 
       <div className="socials">
@@ -139,7 +150,7 @@ const handleClick = () => {
 
       <br/>
       <br/>
-    <h3 style={{textAlign: "center"}}>I have experience with the following tech stack:</h3>
+    <h3 style={{textAlign: "center", color: "white"}}>I have experience with the following tech stack:</h3>
     <br/>
     <ParentDiv>
     <div className="tech-stack">

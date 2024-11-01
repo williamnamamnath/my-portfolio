@@ -3,9 +3,8 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 
 
-
 body {
-    background-color: whitesmoke;
+    background-color: #3A3636;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -107,6 +106,7 @@ h4 {
 .body-space {
     gap: 2rem;
     padding: 0 2rem;
+    overflow-x: hidden;
 }
 
 form {
@@ -181,30 +181,43 @@ label {
     gap: 2rem;
 }
 
-.title {
-  font-size: 1.4em;
-  margin: 1.5rem;
-  right: 2rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-}
 
-.title,
 .nav-link {
   display: block;
   text-decoration: none;
   color: white;
-  padding: 0 1.5rem 0 0;
-  margin: 0 0.5rem;
+  padding: 1 2rem;
+  margin: 0.5rem 2rem;
 
   @media all and (min-width: 360px) and (max-width: 969px) {
     display: block;
   text-decoration: none;
   color: white;
-  padding: 0.7rem;
+  padding: 0.5rem;
   margin: 0 0.5rem;
   border-radius: 0.5rem;
+  }
+}
+
+.title {
+    font-size: 1.4em;
+  margin: 1.5rem;
+  right: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  margin: 0.5rem 0 0 0.5rem;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
   }
 }
 
@@ -223,11 +236,11 @@ label {
 
 .nav-link:not(.active):hover {
     transform: scale(1.2);
-  color: #1D1D1D;
+  color: #56E221;
 
   @media all and (min-width: 360px) and (max-width: 969px) {
     transform: none;
-    color: #1D1D1D;
+    color: #56E221;
   }
   }
 
@@ -372,8 +385,7 @@ body {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        margin: 15px;
-        padding: 15px;
+        
     }
 
     .pj-img1 {

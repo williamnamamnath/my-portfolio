@@ -32,9 +32,9 @@ const NavBar = () => {
               <Li>
                 <NavLink to="/all-projects" className="nav-link">My Projects</NavLink>
               </Li>
-              <Li>
+              {/* <Li>
               <NavLink to="/socials" className="nav-link">My Socials</NavLink>
-              </Li>
+              </Li> */}
             </ul>
         </Nav>
         </>
@@ -62,8 +62,8 @@ const Nav = styled.nav`
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: #245BDE;
-    box-shadow: 0px 3px 3px #2048A8;
+    background-color: #3A3636;
+    /* box-shadow: 0px 3px 3px #32930D; */
 
     @media all and (min-width: 360px) and (max-width: 969px) {
         flex-direction: column;
@@ -86,12 +86,12 @@ const Li = styled.li`
 const Div = styled.div`
     display: none;
     position: absolute;
-    top: 0.6rem;
+    top: 0.5rem;
     right: 0.5rem;
     flex-direction: column;
     justify-content: space-between;
     width: 2.2rem;
-    height: 2rem;
+    height: 1.8rem;
     
     &:hover {
         cursor: pointer;

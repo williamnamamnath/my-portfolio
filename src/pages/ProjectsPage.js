@@ -61,7 +61,7 @@ const ProjectsPage = () => {
     
     return (
         <>
-    <h1>My Projects 💻</h1>
+    <h1 style={{color: "white"}}>My Projects 💻</h1>
     <ParentDiv>
       <ChildDiv onClick={handleClickNFIB}>
     <H2>🌟 <span style={{textDecoration: "underline"}}>NFIB</span></H2>
