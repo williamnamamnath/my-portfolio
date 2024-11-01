@@ -2,18 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
-* {
-    box-sizing: border-box;
-    flex-wrap: wrap;
-}
 
-html, body {
-    overflow-x: hidden;
-}
-
-//#efd6ac
-//#343a40
-//#fefae0
 
 body {
     background-color: whitesmoke;
@@ -23,6 +12,8 @@ body {
     font-weight: 500px;
     font-style: normal;  
     color: black;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -190,7 +181,78 @@ label {
     gap: 2rem;
 }
 
-.nav {
+.title {
+  font-size: 1.4em;
+  margin: 1.5rem;
+  right: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.title,
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0 1.5rem 0 0;
+  margin: 0 0.5rem;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.7rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  }
+}
+
+
+.title {
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.nav-link {
+  transition: 0.3s ease;
+}
+
+.nav-link:not(.active):hover {
+    transform: scale(1.2);
+  color: #1D1D1D;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    transform: none;
+    color: #1D1D1D;
+  }
+  }
+
+.active {
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    display: none;
+    flex-direction: column;
+    width: 97.9%;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.menu-clicked {
+  display: flex;
+}
+
+/* .nav {
     background-color: #faa307;
     box-shadow: 0 2px 10px 0 #343a40;
     display: flex; 
@@ -217,7 +279,7 @@ label {
     display: flex;
     list-style: none;
     gap: 2rem;
-}
+} */
 
 .footer {
     background-color: #faa307;
@@ -234,11 +296,11 @@ body {
     width: 100vw;
 }
 
-.nav {
+/* .nav {
     width: 100vw;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+} */
 
 .projects-img {
     width: 40%;
@@ -288,11 +350,11 @@ body {
         justify-content: center;
     }
 
-    .nav {
+    /* .nav {
         width: 100vw;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
+    } */
 
     .links {
         font-size: medium;
