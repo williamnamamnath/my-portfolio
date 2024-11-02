@@ -25,7 +25,6 @@ display: flex;
 
 const Paragraph = styled.p`
     font-size: large;
-    font-weight: 550;
     text-align: justify;
     margin: 20px;
     padding: 15px;
@@ -40,7 +39,6 @@ const Paragraph = styled.p`
 `
 
 const CenteredParagraph = styled.p`
-font-weight: 600;
     text-align: center;
     margin: 20px;
     padding: 15px;
@@ -72,7 +70,6 @@ const ParentDiv = styled.div`
   `
 
   const ChildDiv = styled.div`
-    font-weight: 550;
     display:inline-block;
     box-shadow: 0 2px 20px 0 gray;
     color: black;
@@ -90,7 +87,6 @@ const H1 = styled.h1`
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 60px;
-  font-weight: 600;
   flex-wrap: wrap;
   color: white;
   
@@ -120,7 +116,7 @@ const AboutMe = () => {
         <ImgDiv>
         <Picture src={banffPhoto} alt="Picture of William Nam-Amnath"></Picture>
         </ImgDiv>
-        <h2 style={{fontStyle: "italic", color: "white"}}>👋 Hi there! </h2>
+        <h2 style={{fontStyle: "italic", color: "black"}}>👋 Hi there! </h2>
         <CenteredParagraph>My name is <span style={{color: "#01A7C2"}}>William Nam-Amnath</span> 
         <br/>
         and I am a full-stack web developer from Montreal, Canada.</CenteredParagraph>
@@ -142,7 +138,7 @@ const AboutMe = () => {
         </Paragraph>
         <br/>
         <br/>
-        <h1 style={{textDecoration: "underline", color: "white"}}>My Coding Philosophy</h1>
+        <h1 style={{textDecoration: "underline", color: "black"}}>My Coding Philosophy</h1>
         <Paragraph>
         As a developer, I believe patience is a key attribute to possess. As someone that enjoys taking on challenges, I understand that problem-solving is a skill that can’t be mastered overnight and I am willing to put in the time and effort to get over any obstacle. 
         </Paragraph>
@@ -154,7 +150,7 @@ const AboutMe = () => {
         </Paragraph>
         <br/>
         <br/>
-        <h1 style={{textDecoration: "underline", color: "white"}}>My Education</h1>
+        <h1 style={{textDecoration: "underline", color: "black"}}>My Education</h1>
         <ParentDiv>
             <ChildDiv>
                 <H2><span style={{color: "#1C6E8C"}}>October 2023 - May 2024</span></H2>

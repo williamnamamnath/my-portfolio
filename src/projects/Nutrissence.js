@@ -111,6 +111,31 @@ const PageSpacing = styled.div`
   margin: 100px 0 100px 0;
 `
 
+const ProjectStack = styled.div`
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: black;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 15px;
+`
+
+const InnerDiv = styled.div`
+    margin: 20px;
+    padding: 15px;
+`
+
+const ProjectLink = styled.a`
+    color: #efd6ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+`
+
 const Nutrissence = () => {
 
     return (
@@ -118,17 +143,17 @@ const Nutrissence = () => {
         <PageSpacing>
             <div className="popup-window">
             <H1>
-            <a className="project-link" href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer">
+            <ProjectLink href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer">
               <span style={{textDecoration: "underline"}}>Nutrissence </span> 🍃
-              </a>
+              </ProjectLink>
               </H1>
             <br/>
                 <ImgDiv>
-                <a className="project-link" href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer">
-                <Picture src={projectNutrissence} alt="Picture of Nutrissence Home Page"></Picture></a>
+                <ProjectLink href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer">
+                <Picture src={projectNutrissence} alt="Picture of Nutrissence Home Page"></Picture></ProjectLink>
                 </ImgDiv>
                     <br/>
-                    <div className="div-inner">
+                    <InnerDiv>
                         <SecondH2>What is Project Nutrissence?</SecondH2>
                         <Paragraph>
                           <br/>
@@ -153,18 +178,18 @@ const Nutrissence = () => {
                             Integrated a user authentication system that provides logged-in users exclusive access
                             </LI>
                         </ul>
-                    </div>
+                    </InnerDiv>
                     <ParentDiv>
                     <NameCard>
                         <H2>Technologies Used:</H2>
-                        <div className="project-stack">
+                        <ProjectStack>
                         <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-react-original-wordmark colored"></TechStack>    
                         <TechStack className="devicon-javascript-plain colored"></TechStack>
                         <TechStack className="devicon-mongodb-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-nodejs-plain-wordmark colored"></TechStack>
-                        </div>
+                        </ProjectStack>
                     </NameCard>
                     </ParentDiv>
             </div>

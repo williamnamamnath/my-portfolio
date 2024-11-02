@@ -33,6 +33,16 @@ const Picture = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
+
+  @media all and (min-width: 360px) {
+    max-width: 250px;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+  }
 `
 
 const H2 = styled.h2`
@@ -66,7 +76,7 @@ const Projects = () => {
       <ChildDiv onClick={handleClickNFIB}>
     <H2>🌟 <span style={{textDecoration: "underline"}}>NFIB</span></H2>
     <h3>Freelance Project</h3>
-        <Picture src={nf1} alt="NFIB preview" className="pj-img1"></Picture>
+        <Picture src={nf1} alt="NFIB preview"></Picture>
       </ChildDiv>
     </ParentDiv>
     <br/>
@@ -74,7 +84,7 @@ const Projects = () => {
     <ParentDiv>
       <ChildDiv onClick={handleClickNutrissence}>
     <H2>🌟 <span style={{textDecoration: "underline"}}>Nutrissence</span></H2>
-        <Picture src={nutr} alt="Nutrissence preview" className="pj-img1"></Picture>
+        <Picture src={nutr} alt="Nutrissence preview"></Picture>
       </ChildDiv>
       </ParentDiv>
     <br/>
@@ -83,7 +93,7 @@ const Projects = () => {
       <ChildDiv onClick={handleClickEmporium}>
     <H2>🌟 <span style={{textDecoration: "underline"}}>E-Wear Emporium</span></H2>
     <h3>Team Project</h3>
-        <Picture src={empo} alt="E-Wear Emporium preview" className="pj-img2"></Picture>
+        <Picture src={empo} alt="E-Wear Emporium preview"></Picture>
       </ChildDiv>
     </ParentDiv>
     <br/>

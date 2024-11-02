@@ -1,0 +1,70 @@
+import styled from "styled-components";
+
+const MobileNavbar = ({ isOpen, toggleMenu }) => {
+
+
+    return (
+        <>
+        <div className={`mobile-nav ${isOpen ? "active" : ""}`} onClick={toggleMenu}>
+            <NavContainer>
+                <MenuItem>X</MenuItem>
+
+            <ul>
+              <li>
+                <MenuItem href="/about">About Me</MenuItem>
+              </li>
+              <li>
+                <MenuItem href="/all-projects">My Projects</MenuItem>
+              </li>
+              {/* <Li>
+              <NavLink to="/socials" className="nav-link">My Socials</NavLink>
+              </Li> */}
+            </ul>
+            </NavContainer>
+        </div>
+        </>
+    )
+}; 
+
+const MenuItem = styled.a`
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+        content: "";
+        width: 2rem;
+        height: 0.2rem;
+        background: linear-gradient(90deg, #3672FF 0%, #0046EA 100%);
+        border-radius: 0.5rem;
+        position: absolute;
+        bottom: -0.6rem;
+        opacity: 0;
+        transform: translateX(-1.5rem);
+        transition: all 0.3s ease;
+    }
+
+    &:hover::before {
+        width: 100%;
+        transform: translateX(0);
+        opacity: 1;
+    }
+`
+
+// const NavbarName = styled.a`
+//     text-decoration: none;
+//     color: white;
+//     font-size: 1.5em;
+//     cursor: pointer;
+// `
+
+const NavContainer = styled.div`
+    width: 60vw;
+    height: 100vh;
+    background-color: #0D164B;
+    padding: 2rem;
+`
+
+export default MobileNavbar;

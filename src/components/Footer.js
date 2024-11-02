@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Anchor = styled.a`
     text-decoration: none;
-    color: black;
+    color: white;
     
     &:hover {
         text-decoration: underline;

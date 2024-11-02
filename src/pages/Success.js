@@ -7,6 +7,15 @@ text-align: center;
 font-size: xx-large;
 `
 
+const Span = styled.span`
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size: 50px;
+`
+
 
 const Success = () => {
     return (
@@ -17,8 +26,8 @@ const Success = () => {
         <br/>
         <Link to="/" style={{color:"black", textDecoration:"none"}}>
             <div className="home-btn">
-            <button className="website-btn">
-            <span className="material-symbols-outlined">Home</span>
+            <button style={{justifyContent: "center"}}>
+            <Span>Home</Span>
             </button>
             <br/>
             </div>

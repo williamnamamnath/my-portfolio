@@ -16,27 +16,23 @@ const H2 = styled.h2`
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 55px;
-  font-weight: 600;
   flex-wrap: wrap;
 
   @media all and (min-width: 360px) and (max-width: 969px) {
   font-size: 35px;
-  font-weight: 800;
   flex-wrap: wrap;
   }
 `
 
 const OtherH1 = styled.h1`
-color: #56E221;
+color: #0046EA;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 60px;
-  font-weight: 600;
   flex-wrap: wrap;
 
   @media all and (min-width: 360px) and (max-width: 969px) {
   font-size: 40px;
-  font-weight: 800;
   flex-wrap: wrap;
   }
 `
@@ -47,6 +43,7 @@ const Div = styled.div`
   align-items: center;
   margin: 20px;
   padding: 20px;
+  
 
   @media all and (min-width: 360px) and (max-width: 969px) {
   margin: 20px 20px 0 20px;
@@ -76,27 +73,28 @@ margin: 15px;
 padding: 10px;
 `
 
-const MoreInfo = styled.div`
-display:inline-block;
-box-shadow: 0 2px 20px 0 gray;
-color: black;
-background-color: #efd6ac;
-border-radius: 30px;
-margin: 20px;
-padding: 15px;
-transition: transform 0.3s ease;
+// const MoreInfo = styled.div`
+// display:inline-block;
+// box-shadow: 0 2px 20px 0 gray;
+// color: white;
+// background-color: #efd6ac;
+// border-radius: 30px;
+// margin: 20px;
+// padding: 15px;
+// transition: transform 0.3s ease;
 
-&:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-`
+// &:hover {
+//   transform: scale(1.1);
+//   cursor: pointer;
+// }
+// `
 
 const Picture = styled.img`
   border-radius: 200px;
   height: 380px;
   width: 380px;
   object-fit: cover;
+  box-shadow: 0 2px 20px 0 gray;
   
   @media all and (min-width: 360px) and (max-width: 969px) {
     border-radius: 150px;
@@ -117,7 +115,61 @@ border-radius: 10px;
 }
 `
 
-const Intro = () => {
+const StackDiv = styled.div`
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 2px 20px 0 gray;
+    color: #efd6ac;
+    background-color: #efd6ac;
+    border-radius: 40px;
+    margin: 30px;
+    padding: 25px;
+`
+
+const SocialsDiv = styled.div`
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: black;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 15px;
+`
+
+const Social = styled.a`
+    transition: transform 0.3s ease;
+
+&:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+`
+
+const Button = styled.button`
+      font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(90deg, #3672FF 0%, #0046EA 100%);
+  padding: 1rem;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: white;
+    background: black;
+    outline: 1.5px solid #0046EA;
+  }
+`
+
+const Home = () => {
 
   useEffect(() => {
     document.title = "William Nam-Amnath | My Portfolio"
@@ -125,8 +177,12 @@ const Intro = () => {
 
 const navigate = useNavigate();
 
-const handleClick = () => {
+const navAbout = () => {
   navigate('/about'); 
+};
+
+const navProjects = () => {
+  navigate('/all-projects'); 
 };
 
   return (
@@ -140,36 +196,38 @@ const handleClick = () => {
       <OtherH1>Nam-Amnath</OtherH1>
       <h2 style={{textAlign: "center"}}>▶ Full-Stack Web Developer ◀</h2>
       <h3>📍 Montreal, QC</h3> 
-      <div className="socials">
-      <a className="github" href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"/></a>
-      <a className="linkedin" href="https://www.linkedin.com/in/william-nam-amnath/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo"/></a>
-      <a className="email" href="mailto:william.nam-amnath@mail.mcgill.ca" target="_blank" rel="noopener noreferrer"><img src={email} alt="email logo"/></a>
-      </div>
+      <SocialsDiv>
+      <Social href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"/></Social>
+      <Social href="https://www.linkedin.com/in/william-nam-amnath/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo"/></Social>
+      <Social href="mailto:william.nam-amnath@mail.mcgill.ca" target="_blank" rel="noopener noreferrer"><img src={email} alt="email logo"/></Social>
+      </SocialsDiv>
     </NameCard>
       </PicAndCard>
 
       <br/>
       <br/>
     <h3 style={{textAlign: "center", color: "white"}}>I have experience with the following tech stack:</h3>
-    <br/>
     <ParentDiv>
-    <div className="tech-stack">
+    <StackDiv>
     <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-javascript-plain colored"></TechStack>
     <TechStack className="devicon-react-original-wordmark colored"></TechStack>    
     <TechStack className="devicon-mongodb-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-nodejs-plain-wordmark colored"></TechStack>
-    </div>
+    </StackDiv>
     </ParentDiv>
     <br/>
     <br/>
     <br/>
-    <ParentDiv>
-      <MoreInfo onClick={handleClick}>
-        <h3>Learn More About Me! 👨‍💻</h3>
-      </MoreInfo>
-    </ParentDiv>
+    <SocialsDiv>
+      <Button onClick={navAbout}>
+        Learn More About Me! 👨‍💻
+      </Button>
+      <Button onClick={navProjects}>
+        My Projects
+      </Button>
+    </SocialsDiv>
     <br/>
     <br/>
     <br/>
@@ -182,4 +240,4 @@ const handleClick = () => {
   );
 }
 
-export default Intro;
+export default Home;

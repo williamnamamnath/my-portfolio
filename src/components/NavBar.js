@@ -1,113 +1,148 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 
 import styled from "styled-components";
-
-// import user from "../images/user.png";
-// import email from "../images/134146_mail_email_icon.png";
-// import github from "../images/211904_social_github_icon.png";
-// import linkedin from "../images/linkedin-icon.png";
+import MobileNavbar from "./MobileNavbar";
 
 const NavBar = () => {
 
-  const [menuClicked, setMenuClicked] = useState(false);
+    const [menuClicked, setMenuClicked] = useState(false);
 
-  const handleClick = () => {
-      setMenuClicked(!menuClicked)
-  };
+    const toggleMenu = () => {
+        setMenuClicked(!menuClicked);
+    };
 
     return (
         <>
+        <MobileNavbar isOpen={menuClicked} toggleMenu={toggleMenu} />
+
         <Nav>
-        <Link to="/" className="title">William Nam-Amnath</Link>
-        <Div onClick={handleClick}>
-                <Span></Span>
-                <Span></Span>
-                <Span></Span>
-            </Div>
-            <ul className={menuClicked ? "menu-clicked" : ""}>
+            <NavContent>
+                <NavbarName href="/">William Nam-Amnath</NavbarName>
+            <Ul>
               <Li>
-                <NavLink to="/about" className="nav-link">About Me</NavLink>
+                <MenuItem href="/about">About Me</MenuItem>
               </Li>
               <Li>
-                <NavLink to="/all-projects" className="nav-link">My Projects</NavLink>
+                <MenuItem href="all-projects">My Projects</MenuItem>
               </Li>
               {/* <Li>
               <NavLink to="/socials" className="nav-link">My Socials</NavLink>
               </Li> */}
-            </ul>
+            </Ul>
+            <Button onClick={toggleMenu}>
+                <span class={"material-symbols-outlined"} style={{fontSize: "1.8rem"}}>
+                    {menuClicked ? "Close" : "Menu"}
+                </span>
+            </Button>
+            </NavContent>
         </Nav>
         </>
     )
 }; 
 
 
-/* <Li>
-<NavLink href="/about"><img src={user} alt="github logo"/></NavLink>
-</Li>
-<Li>
-<NavLink href="https://github.com/williamnamamnath" className="github"><img src={github} alt="github logo"/></NavLink>
-</Li>
-<Li>
-<NavLink href="https://www.linkedin.com/in/william-nam-amnath-a270b2157/" className="linkedin"><img src={linkedin} alt="linkedin logo"/></NavLink>
-</Li>
-<Li>
-<NavLink href="mailto:william.nam-amnath@mail.mcgill.ca" className="email"><img src={email} alt="email logo"/></NavLink>
-</Li> */
-
-
 const Nav = styled.nav`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0.5rem 0;
     position: sticky;
     top: 0;
-    background-color: #3A3636;
-    /* box-shadow: 0px 3px 3px #32930D; */
+    z-index: 30;
+    backdrop-filter: blur(50px);
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 10px #0046EA;
 
-    @media all and (min-width: 360px) and (max-width: 969px) {
-        flex-direction: column;
-        align-items: start;
-        width: 100vw;
+    @media all and (max-width: 1325px) {
+        padding: 0 2rem;
     }
 `
 
+const NavContent = styled.div`
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 0 auto;
+`
+
+const Ul = styled.ul`
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+
+    @media all and (max-width: 960px) {
+        display: none;
+    }
+`
 
 const Li = styled.li`
-    list-style: none;
-    font-weight: bold;
-    
-    @media all and (min-width: 360px) and (max-width: 969px) {
+    color: white;
+    margin: 0 1.5rem;
+`
+
+const MenuItem = styled.a`
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+        content: "";
+        width: 2rem;
+        height: 0.2rem;
+        background: linear-gradient(90deg, #3672FF 0%, #0046EA 100%);
+        border-radius: 0.5rem;
+        position: absolute;
+        bottom: -0.6rem;
+        opacity: 0;
+        transform: translateX(-1.5rem);
+        transition: all 0.3s ease;
+    }
+
+    &:hover::before {
         width: 100%;
-        text-align: center;
+        transform: translateX(0);
+        opacity: 1;
     }
-    `
+`
 
-const Div = styled.div`
+const NavbarName = styled.a`
+    text-decoration: none;
+    color: white;
+    font-size: 1.7em;
+    cursor: pointer;
+
+    @media all and (max-width: 960px) {
+        content: "William";
+    }
+`
+
+const Button = styled.button`
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: white;
+    background: linear-gradient(90deg, #3672FF 0%, #0046EA 100%);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
     display: none;
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 2.2rem;
-    height: 1.8rem;
-    
-    &:hover {
-        cursor: pointer;
-    }
-    
-    @media all and (min-width: 360px) and (max-width: 969px) {
-        display: flex;
-        right: 2rem;
-    }
-    `
 
-const Span = styled.span`
-    height: 0.4rem;
-    width: 100%;
-    background-color: white;
-    border-radius: 0.2rem;
-    `
+    &:hover {
+        color: #0046EA;
+        background: black;
+        border: 1px solid #0046EA;
+    }
+
+    @media all and (max-width: 960px) {
+        display: block;
+    }
+`
 
 export default NavBar;

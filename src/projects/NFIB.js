@@ -110,6 +110,31 @@ const PageSpacing = styled.div`
   margin: 100px 0 100px 0;
 `
 
+const ProjectStack = styled.div`
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: black;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 15px;
+`
+
+const InnerDiv = styled.div`
+    margin: 20px;
+    padding: 15px;
+`
+
+const ProjectLink = styled.a`
+    color: #efd6ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+`
+
 const NFIB = () => {
 
     return (
@@ -117,17 +142,17 @@ const NFIB = () => {
         <PageSpacing>
             <div className="popup-window">
             <H1>
-            <a className="project-link" href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer">
+            <ProjectLink href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer">
               <span style={{textDecoration: "underline"}}>NFIB </span> 🧬
-              </a>
+              </ProjectLink>
               </H1>
             <br/>
                 <ImgDiv>
-                <a className="project-link" href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer">
-                <Picture src={projectNFIB} alt="Picture of NFIB Home Page"></Picture></a>
+                <ProjectLink href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer">
+                <Picture src={projectNFIB} alt="Picture of NFIB Home Page"></Picture></ProjectLink>
                 </ImgDiv>
                 <br/>
-                    <div className="div-inner">
+                    <InnerDiv>
                         <SecondH2>What is Project NFIB (neurofibromatosis)?</SecondH2>
                         <Paragraph>
                             Project NFIB is a freelance project that was proposed to me by one of the medical geneticists that I work with at the Montreal University Health Centre (MUHC).
@@ -144,16 +169,16 @@ const NFIB = () => {
                             Frontend-based website with the goal of illustrating the NFIB team at the MUHC and to describe this genetic disease
                             </LI>
                         </ul>
-                    </div>
+                    </InnerDiv>
                     <br/>
                     <ParentDiv>
                     <NameCard>
                         <H2>Technologies Used:</H2>
-                        <div className="project-stack">
+                        <ProjectStack>
                         <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-react-original-wordmark colored"></TechStack>    
-                        </div>
+                        </ProjectStack>
                     </NameCard>
                     </ParentDiv>
             </div>
