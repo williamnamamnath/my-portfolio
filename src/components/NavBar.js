@@ -83,7 +83,7 @@ const Li = styled.li`
 const MenuItem = styled.a`
     text-decoration: none;
     font-size: 0.9rem;
-    color: #fff;
+    color: white;
     position: relative;
     cursor: pointer;
 

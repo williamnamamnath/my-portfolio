@@ -7,7 +7,9 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
         <>
         <div className={`mobile-nav ${isOpen ? "active" : ""}`} onClick={toggleMenu}>
             <NavContainer>
-                <MenuItem>X</MenuItem>
+                <CloseMenu>Welcome to my portfolio!</CloseMenu>
+                <hr/>
+                <br/>
 
             <ul>
               <li>
@@ -28,8 +30,8 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
 
 const MenuItem = styled.a`
     text-decoration: none;
-    font-size: 0.9rem;
-    color: #fff;
+    font-size: 1rem;
+    color: white;
     position: relative;
     cursor: pointer;
 
@@ -51,6 +53,15 @@ const MenuItem = styled.a`
         transform: translateX(0);
         opacity: 1;
     }
+`
+
+const CloseMenu = styled.a`
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    cursor: pointer;
 `
 
 // const NavbarName = styled.a`
