@@ -98,7 +98,7 @@ const H1 = styled.h1`
 `
 
 const PageSpacing = styled.div`
-  margin: 100px 0 100px 0;
+  margin: 100px 0;
 `
 
 
@@ -116,8 +116,8 @@ const AboutMe = () => {
         <ImgDiv>
         <Picture src={banffPhoto} alt="Picture of William Nam-Amnath"></Picture>
         </ImgDiv>
-        <h2 style={{fontStyle: "italic", color: "black"}}>👋 Hi there! </h2>
-        <CenteredParagraph>My name is <span style={{color: "#01A7C2"}}>William Nam-Amnath</span> 
+        <h2 style={{fontStyle: "italic", color: "white"}}>👋 Hi there! </h2>
+        <CenteredParagraph>My name is <span style={{color: "#0046EA"}}>William Nam-Amnath</span> 
         <br/>
         and I am a full-stack web developer from Montreal, Canada.</CenteredParagraph>
         <Paragraph>I am a junior developer having graduated from the Concordia University Web Development bootcamp program in May 2024. Throughout the program, I learned and practiced using the following techniques stacks/concepts: </Paragraph>
@@ -138,7 +138,7 @@ const AboutMe = () => {
         </Paragraph>
         <br/>
         <br/>
-        <h1 style={{textDecoration: "underline", color: "black"}}>My Coding Philosophy</h1>
+        <h1 style={{textDecoration: "underline", color: "white"}}>My Coding Philosophy</h1>
         <Paragraph>
         As a developer, I believe patience is a key attribute to possess. As someone that enjoys taking on challenges, I understand that problem-solving is a skill that can’t be mastered overnight and I am willing to put in the time and effort to get over any obstacle. 
         </Paragraph>
@@ -150,10 +150,19 @@ const AboutMe = () => {
         </Paragraph>
         <br/>
         <br/>
-        <h1 style={{textDecoration: "underline", color: "black"}}>My Education</h1>
+        <h1 style={{textDecoration: "underline", color: "white"}}>My Education and Internships</h1>
         <ParentDiv>
             <ChildDiv>
-                <H2><span style={{color: "#1C6E8C"}}>October 2023 - May 2024</span></H2>
+                <H2><span style={{color: "#0046EA"}}>October 2024 - Present</span></H2>
+                <ul>
+                    <li><span style={{fontWeight: "bold"}}>Frontend developer intern</span> for Loriginal.org, also known as Artur.Art</li>
+                </ul>
+            </ChildDiv>
+        </ParentDiv>
+        <br/>
+        <ParentDiv>
+            <ChildDiv>
+                <H2><span style={{color: "#0046EA"}}>October 2023 - May 2024</span></H2>
                 <ul>
                     <li><span style={{fontWeight: "bold"}}>Certificate</span> from the Concordia University Web Development Bootcamp</li>
                 </ul>
@@ -162,7 +171,7 @@ const AboutMe = () => {
         <br/>
         <ParentDiv>
             <ChildDiv>
-                <H2><span style={{color: "#1C6E8C"}}>August 2017 - April 2021</span></H2>
+                <H2><span style={{color: "#0046EA"}}>August 2017 - April 2021</span></H2>
                 <ul>
                     <li><span style={{fontWeight: "bold"}}>Bachelor of Education</span> from McGill University</li>
                     <br/>

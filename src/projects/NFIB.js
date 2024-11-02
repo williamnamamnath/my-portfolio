@@ -4,7 +4,7 @@ import styled from "styled-components";
 import projectNFIB from "../images/NFIB-home-page.JPG";
 
 const Picture = styled.img`
-  box-shadow: 0 2px 15px 0 gray;
+  box-shadow: 0 2px 20px 0 #0046EA;
   border-radius: 15px;
   height: 60%;
   width: 60%;
@@ -19,13 +19,11 @@ const Picture = styled.img`
 const H1 = styled.h1`
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 60px;
-  font-weight: 600;
+  font-size: 4rem;
   flex-wrap: wrap;
   
   @media all and (min-width: 360px) and (max-width: 969px) {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 2.5rem;
   flex-wrap: wrap;
   }
 `
@@ -55,23 +53,24 @@ justify-content: center;
 `
 
 const TechStack = styled.i`
-font-size: 75px;
-background-color: black;
+font-size: 8rem;
+background-color: #060414;
 padding: 5px;
 border-radius: 10px;
+flex-wrap: wrap;
 
 @media all and (min-width: 360px) and (max-width: 969px) {
-  font-size: 40px;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   justify-content: center; 
+  flex-wrap: wrap;
 }
 `
 
 const LI = styled.li`
     line-height: 1.5;
     font-size: 20px;
-    font-weight: 550;
 
   @media all and (min-width: 360px) and (max-width: 969px) {
     font-size: 20px;
@@ -80,7 +79,6 @@ const LI = styled.li`
 
 const Paragraph = styled.p`
     font-size: large;
-    font-weight: 550;
     text-align: justify;
     margin: 20px;
     padding: 15px;
@@ -100,6 +98,7 @@ const H3 = styled.h3`
 const H2 = styled.h2`
     text-decoration: underline;
     text-align: center;
+    color: white;
 `
 
 const SecondH2 = styled.h2`
@@ -107,7 +106,12 @@ const SecondH2 = styled.h2`
 `
 
 const PageSpacing = styled.div`
-  margin: 100px 0 100px 0;
+  margin: 8rem 0;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    margin: 5rem 0;
+    flex-wrap: wrap;
+  }
 `
 
 const ProjectStack = styled.div`
@@ -132,18 +136,18 @@ const ProjectLink = styled.a`
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: black;
+    color: white;
 `
 
 const NFIB = () => {
 
     return (
         <>
-        <PageSpacing>
-            <div className="popup-window">
+        <PageSpacing />
+            <div className="project-space">
             <H1>
             <ProjectLink href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer">
-              <span style={{textDecoration: "underline"}}>NFIB </span> 🧬
+              NFIB 🧬
               </ProjectLink>
               </H1>
             <br/>
@@ -153,7 +157,7 @@ const NFIB = () => {
                 </ImgDiv>
                 <br/>
                     <InnerDiv>
-                        <SecondH2>What is Project NFIB (neurofibromatosis)?</SecondH2>
+                        <SecondH2>What is Project NFIB (Neurofibromatosis)?</SecondH2>
                         <Paragraph>
                             Project NFIB is a freelance project that was proposed to me by one of the medical geneticists that I work with at the Montreal University Health Centre (MUHC).
                         </Paragraph> 
@@ -182,7 +186,6 @@ const NFIB = () => {
                     </NameCard>
                     </ParentDiv>
             </div>
-        </PageSpacing>
         </>
     )
 }

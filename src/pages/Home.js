@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import "../GlobalStyles";
-
-import Projects from "./Projects";
-
 import styled from "styled-components";
 import picture from "../images/profile-picture.jpg";
 import email from "../images/134146_mail_email_icon.png";
@@ -73,22 +69,6 @@ margin: 15px;
 padding: 10px;
 `
 
-// const MoreInfo = styled.div`
-// display:inline-block;
-// box-shadow: 0 2px 20px 0 gray;
-// color: white;
-// background-color: #efd6ac;
-// border-radius: 30px;
-// margin: 20px;
-// padding: 15px;
-// transition: transform 0.3s ease;
-
-// &:hover {
-//   transform: scale(1.1);
-//   cursor: pointer;
-// }
-// `
-
 const Picture = styled.img`
   border-radius: 200px;
   height: 380px;
@@ -105,13 +85,18 @@ const Picture = styled.img`
 `
 
 const TechStack = styled.i`
-font-size: 75px;
-background-color: black;
+font-size: 8rem;
+background-color: #060414;
 padding: 5px;
 border-radius: 10px;
+flex-wrap: wrap;
 
 @media all and (min-width: 360px) and (max-width: 969px) {
-  font-size: 50px;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-wrap: wrap;
 }
 `
 
@@ -120,12 +105,10 @@ const StackDiv = styled.div`
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    box-shadow: 0 2px 20px 0 gray;
-    color: #efd6ac;
-    background-color: #efd6ac;
-    border-radius: 40px;
-    margin: 30px;
-    padding: 25px;
+    color: black;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 15px;
 `
 
 const SocialsDiv = styled.div`
@@ -135,8 +118,8 @@ const SocialsDiv = styled.div`
     gap: 2rem;
     color: black;
     border-radius: 30px;
-    margin: 20px;
-    padding: 15px;
+    margin: 1rem;
+    padding: 1rem 2.5rem;
 `
 
 const Social = styled.a`
@@ -149,16 +132,17 @@ const Social = styled.a`
 `
 
 const Button = styled.button`
-      font-size: 1rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   background: linear-gradient(90deg, #3672FF 0%, #0046EA 100%);
-  padding: 1rem;
+  padding: 2rem 2.2rem;
+  margin: 2rem 0;
   border: none;
   outline: 1.5px solid transparent;
-  border-radius: 1.5rem;
+  border-radius: 2.5rem;
   cursor: pointer;
   transition: all 0.5s ease;
 
@@ -167,6 +151,14 @@ const Button = styled.button`
     background: black;
     outline: 1.5px solid #0046EA;
   }
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    border-radius: 1.5rem;
+}
 `
 
 const Home = () => {
@@ -206,36 +198,33 @@ const navProjects = () => {
 
       <br/>
       <br/>
-    <h3 style={{textAlign: "center", color: "white"}}>I have experience with the following tech stack:</h3>
     <ParentDiv>
+      <NameCard>
+    <h3 style={{textAlign: "center", color: "white"}}>I have experience with the following tech stack:</h3>
     <StackDiv>
     <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-javascript-plain colored"></TechStack>
+    </StackDiv>
+    <StackDiv>
     <TechStack className="devicon-react-original-wordmark colored"></TechStack>    
     <TechStack className="devicon-mongodb-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-nodejs-plain-wordmark colored"></TechStack>
     </StackDiv>
+      </NameCard>
     </ParentDiv>
-    <br/>
-    <br/>
-    <br/>
+
     <SocialsDiv>
       <Button onClick={navAbout}>
-        Learn More About Me! 👨‍💻
+        Learn More About Me 🙋‍♂️
       </Button>
       <Button onClick={navProjects}>
-        My Projects
+        View My Projects 💻
       </Button>
     </SocialsDiv>
     <br/>
     <br/>
     <br/>
-    <hr style={{width: "50%"}}/>        
-    <br/>
-    <br/>
-    <Projects />
-
     </div>
   );
 }

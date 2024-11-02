@@ -2,51 +2,55 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import styled from "styled-components";
-import nf1 from "../images/nfib-small.JPG";
-import nutr from "../images/nutrissence-small.JPG";
-import empo from "../images/emporium-small.JPG";
 
 const ParentDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   `
-  const ChildDiv = styled.div`
-    display:inline-block;
-    box-shadow: 0 2px 20px 0 gray;
-    color: black;
-    background-color: #efd6ac;
-    border-radius: 30px;
-    margin: 20px;
-    padding: 25px;
-    transition: transform 0.3s ease;
 
-&:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-  `
-
-const Picture = styled.img`
-  box-shadow: 0 2px 20px 0 #efd6ac;
-  border-radius: 10px;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-
-  @media all and (min-width: 360px) {
-    max-width: 250px;
-    max-height: 200px;
-    display: flex;
+const SocialsDiv = styled.div`
+    display: flex; 
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-self: center;
-    flex-wrap: wrap;
+    gap: 2rem;
+    color: black;
+    border-radius: 30px;
+    margin: 2rem;
+    padding: 3rem;
+`
+
+const Button = styled.button`
+  font-size: 1rem;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(90deg, #3672FF 0%, #0046EA 100%);
+  box-shadow: 0 2px 20px 0 #0046EA;
+  padding: 2rem 3.6rem;
+  margin: 2rem;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  flex-wrap: wrap;
+
+  &:hover {
+    color: white;
+    background: black;
+    outline: 1.5px solid #0046EA;
   }
 `
 
 const H2 = styled.h2`
   text-align: center;
+`
+
+const PageSpacing = styled.div`
+  margin: 100px 0;
 `
 
 const ProjectsPage = () => {
@@ -70,35 +74,34 @@ const ProjectsPage = () => {
       };
     
     return (
-        <>
-    <h1 style={{color: "white"}}>My Projects 💻</h1>
+      <>
+      <PageSpacing />
+      <h1 style={{color: "white"}}>My Projects 💻</h1>
+
+      <SocialsDiv>
+      <Button onClick={handleClickNFIB}>
+    <H2>🌟  <span style={{textDecoration: "underline"}}>NFIB</span></H2>
+    <h5>Freelance Project</h5>
+      </Button>
+
+
+      <Button onClick={handleClickNutrissence}>
+    <H2>🌟  <span style={{textDecoration: "underline"}}>Nutrissence</span></H2>
+    <h5>Personal Project</h5>
+      </Button>
+
+
+      <Button onClick={handleClickEmporium}>
+    <H2>🌟  <span style={{textDecoration: "underline"}}>E-Wear Emporium</span></H2>
+    <h5>Team Project</h5>
+      </Button>
+    </SocialsDiv>
+    
     <ParentDiv>
-      <ChildDiv onClick={handleClickNFIB}>
-    <H2>🌟 <span style={{textDecoration: "underline"}}>NFIB</span></H2>
-    <h3>Freelance Project</h3>
-        <Picture src={nf1} alt="NFIB preview"></Picture>
-      </ChildDiv>
     </ParentDiv>
     <br/>
-
-    <ParentDiv>
-      <ChildDiv onClick={handleClickNutrissence}>
-    <H2>🌟 <span style={{textDecoration: "underline"}}>Nutrissence</span></H2>
-        <Picture src={nutr} alt="Nutrissence preview"></Picture>
-      </ChildDiv>
-      </ParentDiv>
     <br/>
-
-    <ParentDiv>
-      <ChildDiv onClick={handleClickEmporium}>
-    <H2>🌟 <span style={{textDecoration: "underline"}}>E-Wear Emporium</span></H2>
-    <h3>Team Project</h3>
-        <Picture src={empo} alt="E-Wear Emporium preview"></Picture>
-      </ChildDiv>
-    </ParentDiv>
-
-    <br/>
-    <h3>More projects will be added soon!</h3>
+    <h3 style={{color: "white"}}>More projects will be added soon!</h3>
     <br/>
         </>
     )

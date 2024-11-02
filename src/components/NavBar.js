@@ -82,7 +82,7 @@ const Li = styled.li`
 
 const MenuItem = styled.a`
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: white;
     position: relative;
     cursor: pointer;
@@ -110,7 +110,7 @@ const MenuItem = styled.a`
 const NavbarName = styled.a`
     text-decoration: none;
     color: white;
-    font-size: 1.7em;
+    font-size: 1.8em;
     cursor: pointer;
 
     @media all and (max-width: 960px) {

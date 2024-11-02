@@ -98,7 +98,7 @@ const H1 = styled.h1`
 `
 
 const PageSpacing = styled.div`
-  margin: 100px 0 100px 0;
+  margin: 100px 0;
 `
 
 

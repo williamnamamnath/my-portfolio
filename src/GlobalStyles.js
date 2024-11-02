@@ -42,6 +42,10 @@ h4 {
     align-items: center;
 }
 
+.project-space {
+    color: white;
+}
+
 .body-space {
     gap: 2rem;
     padding: 0 2rem;

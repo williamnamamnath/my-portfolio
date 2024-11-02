@@ -4,7 +4,7 @@ import styled from "styled-components";
 import projectNutrissence from "../images/Nutrissence-home-page.JPG";
 
 const Picture = styled.img`
-  box-shadow: 0 2px 15px 0 gray;
+  box-shadow: 0 2px 20px 0 #0046EA;
   border-radius: 15px;
   height: 60%;
   width: 60%;
@@ -30,9 +30,7 @@ const ParentDiv = styled.div`
 
 const NameCard = styled.div`
 display: block;
-//box-shadow: 0 2px 20px 0 #efd6ac;
-color: black;
-//background-color: black;
+color: white;
 border-radius: 30px;
 margin: 20px 40px;
 padding: 15px 30px;
@@ -41,16 +39,18 @@ justify-content: center;
 `
 
 const TechStack = styled.i`
-font-size: 75px;
-background-color: black;
+font-size: 8rem;
+background-color: #060414;
 padding: 5px;
 border-radius: 10px;
+flex-wrap: wrap;
 
 @media all and (min-width: 360px) and (max-width: 969px) {
-  font-size: 40px;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   justify-content: center; 
+  flex-wrap: wrap;
 }
 `
 
@@ -60,7 +60,6 @@ const Paragraph = styled.p`
     margin: 20px;
     padding: 15px;
     line-height: 1.5;
-    font-weight: 550;
 
     @media all and (min-width: 360px) {
     font-size: 20px;
@@ -77,7 +76,6 @@ const H3 = styled.h3`
 const LI = styled.li`
     line-height: 1.5;
     font-size: 20px;
-    font-weight: 550;
 
   @media all and (min-width: 360px) and (max-width: 969px) {
     font-size: 20px;
@@ -96,19 +94,22 @@ const SecondH2 = styled.h2`
 const H1 = styled.h1`
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 60px;
-  font-weight: 600;
+  font-size: 4rem;
   flex-wrap: wrap;
   
   @media all and (min-width: 360px) and (max-width: 969px) {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 2.5rem;
   flex-wrap: wrap;
   }
 `
 
 const PageSpacing = styled.div`
-  margin: 100px 0 100px 0;
+  margin: 8rem 0;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    margin: 5rem 0;
+    flex-wrap: wrap;
+  }
 `
 
 const ProjectStack = styled.div`
@@ -133,18 +134,18 @@ const ProjectLink = styled.a`
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: black;
+    color: white;
 `
 
 const Nutrissence = () => {
 
     return (
         <>
-        <PageSpacing>
-            <div className="popup-window">
+        <PageSpacing />
+            <div className="project-space">
             <H1>
             <ProjectLink href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer">
-              <span style={{textDecoration: "underline"}}>Nutrissence </span> 🍃
+              Nutrissence 🍃
               </ProjectLink>
               </H1>
             <br/>
@@ -185,7 +186,9 @@ const Nutrissence = () => {
                         <ProjectStack>
                         <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
-                        <TechStack className="devicon-react-original-wordmark colored"></TechStack>    
+                        <TechStack className="devicon-react-original-wordmark colored"></TechStack>
+                        </ProjectStack>
+                        <ProjectStack>    
                         <TechStack className="devicon-javascript-plain colored"></TechStack>
                         <TechStack className="devicon-mongodb-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-nodejs-plain-wordmark colored"></TechStack>
@@ -193,7 +196,6 @@ const Nutrissence = () => {
                     </NameCard>
                     </ParentDiv>
             </div>
-        </PageSpacing>
         </>
     )
 }
