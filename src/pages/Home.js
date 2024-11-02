@@ -161,6 +161,15 @@ const Button = styled.button`
 }
 `
 
+const PageSpacing = styled.div`
+  margin: 8rem 0;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+`
+
 const Home = () => {
 
   useEffect(() => {
@@ -179,6 +188,7 @@ const navProjects = () => {
 
   return (
     <div className="body-space">
+      <PageSpacing />
       <PicAndCard>    
     <Div>
     <Picture src={picture} alt="Picture of William Nam-Amnath"></Picture>
@@ -195,9 +205,11 @@ const navProjects = () => {
       </SocialsDiv>
     </NameCard>
       </PicAndCard>
+      <br/>
+      <br/>
+      <br/>
 
-      <br/>
-      <br/>
+      <PageSpacing />
     <ParentDiv>
       <NameCard>
     <h3 style={{textAlign: "center", color: "white"}}>I have experience with the following tech stack:</h3>
@@ -213,7 +225,14 @@ const navProjects = () => {
     </StackDiv>
       </NameCard>
     </ParentDiv>
-
+    <br/>
+    <br/>
+    <br/>    
+   
+    <br/>
+    <br/>
+    <br/>
+    <PageSpacing />
     <SocialsDiv>
       <Button onClick={navAbout}>
         Learn More About Me 🙋‍♂️
@@ -222,6 +241,11 @@ const navProjects = () => {
         View My Projects 💻
       </Button>
     </SocialsDiv>
+    <PageSpacing />
+
+    <br/>
+    <br/>
+    <br/>
     <br/>
     <br/>
     <br/>
