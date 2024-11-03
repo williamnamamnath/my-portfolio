@@ -24,12 +24,12 @@ const NavBar = () => {
               <Li>
                 <MenuItem href="/projects">My Projects</MenuItem>
               </Li>
-              <Li>
-                <MenuItem href="/about">My Professional Experience</MenuItem>
+              {/* <Li>
+                <MenuItem href="/experience">My Professional Experience</MenuItem>
               </Li>
               <Li>
                 <MenuItem href="/contact">My Socials</MenuItem>
-              </Li>
+              </Li> */}
             </Ul>
             <Button onClick={toggleMenu}>
                 <span class={"material-symbols-outlined"} style={{fontSize: "1.8rem"}}>

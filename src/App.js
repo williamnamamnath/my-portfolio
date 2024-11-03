@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home"
 import AboutMe from "./pages/AboutMe";
-import WebLanguages from './pages/WebLanguages';
 import ProjectsPage from "./pages/ProjectsPage";
 import NFIB from "./projects/NFIB";
 import Nutrissence from "./projects/Nutrissence";
@@ -27,7 +26,6 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutMe />} />
-                <Route path="/languages" element={<WebLanguages />} />
                 <Route path="/projects" element={<ProjectsPage />} />
                 <Route path="/contact" element={<Socials />} />
                 <Route path="/nfib" element={<NFIB />} />
