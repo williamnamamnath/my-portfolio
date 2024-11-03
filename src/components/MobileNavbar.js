@@ -13,7 +13,7 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
 
             <ul>
             <li>
-                <MenuItem href="projects">My Projects</MenuItem>
+                <MenuItem href="/projects">My Projects</MenuItem>
               </li>
               {/* <li>
                 <MenuItem href="/experience">My Professional Experience</MenuItem>
