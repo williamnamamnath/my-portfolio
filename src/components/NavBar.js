@@ -25,10 +25,10 @@ const NavBar = () => {
                 <MenuItem href="/projects">My Projects</MenuItem>
               </Li>
               <Li>
-                <MenuItem href="/all-projects">My Professional Experience</MenuItem>
+                <MenuItem href="/experience">My Professional Experience</MenuItem>
               </Li>
               <Li>
-                <MenuItem href="/">My Socials</MenuItem>
+                <MenuItem href="/contact">My Socials</MenuItem>
               </Li>
             </Ul>
             <Button onClick={toggleMenu}>
