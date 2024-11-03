@@ -22,7 +22,7 @@ const NavBar = () => {
             <Social href="/"><Img src={name} alt="W logo"/></Social>
             <Ul>
               <Li>
-                <MenuItem href="/all-projects">My Projects</MenuItem>
+                <MenuItem href="/projects">My Projects</MenuItem>
               </Li>
               <Li>
                 <MenuItem href="/all-projects">My Professional Experience</MenuItem>
