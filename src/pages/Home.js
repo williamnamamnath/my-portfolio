@@ -187,7 +187,6 @@ const navProjects = () => {
       <br/>
       <h3 style={{textAlign: "center"}}>Full-Stack Web Developer with a Passion for the Frontend</h3>
       <hr/>
-      <h3 style={{textAlign: "center"}}>Transitioning Abstract Ideas to Stunning Reality</h3>
       <h4>📍 Montreal, QC</h4> 
       <SocialsDiv>
       <Social href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"/></Social>
@@ -211,9 +210,9 @@ const navProjects = () => {
     <br/>
     <br/>
       <PageSpacing />
+    <h3 style={{textAlign: "center", color: "white"}}>I have experience with the following tech stack:</h3>
     <ParentDiv>
       <NameCard>
-    <h3 style={{textAlign: "center", color: "white"}}>I have experience with the following tech stack:</h3>
     <StackDiv>
     <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
