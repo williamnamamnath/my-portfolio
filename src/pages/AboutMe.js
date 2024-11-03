@@ -101,6 +101,20 @@ const PageSpacing = styled.div`
   margin: 100px 0;
 `
 
+const OtherH2 = styled.h2`
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  flex-wrap: wrap;
+  color: white;
+  
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 50px;
+    font-weight: 600;
+  flex-wrap: wrap;
+  }
+`
+
 
 const AboutMe = () => {
 
@@ -111,7 +125,7 @@ const AboutMe = () => {
     return (
         <>
         <PageSpacing>
-        <div className="popup-window">
+        <div className="body-space">
         <H1>About Me 🙋‍♂️</H1>
         <ImgDiv>
         <Picture src={banffPhoto} alt="Picture of William Nam-Amnath"></Picture>
@@ -138,7 +152,7 @@ const AboutMe = () => {
         </Paragraph>
         <br/>
         <br/>
-        <h1 style={{textDecoration: "underline", color: "white"}}>My Coding Philosophy</h1>
+        <OtherH2>My Coding Philosophy</OtherH2>
         <Paragraph>
         As a developer, I believe patience is a key attribute to possess. As someone that enjoys taking on challenges, I understand that problem-solving is a skill that can’t be mastered overnight and I am willing to put in the time and effort to get over any obstacle. 
         </Paragraph>
@@ -150,7 +164,7 @@ const AboutMe = () => {
         </Paragraph>
         <br/>
         <br/>
-        <h1 style={{textDecoration: "underline", color: "white"}}>My Education and Internships</h1>
+        <OtherH2>My Education and Internships</OtherH2>
         <ParentDiv>
             <ChildDiv>
                 <H2><span style={{color: "#0046EA"}}>October 2024 - Present</span></H2>

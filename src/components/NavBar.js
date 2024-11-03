@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import name from "../images/w-logo.png"; 
+
 import styled from "styled-components";
 import MobileNavbar from "./MobileNavbar";
 
@@ -17,16 +19,16 @@ const NavBar = () => {
 
         <Nav>
             <NavContent>
-                <NavbarName href="/">William Nam-Amnath</NavbarName>
+            <Social href="/"><Img src={name} alt="W logo"/></Social>
             <Ul>
-              <Li>
-                <MenuItem href="/about">About Me</MenuItem>
-              </Li>
               <Li>
                 <MenuItem href="all-projects">My Projects</MenuItem>
               </Li>
               {/* <Li>
-              <NavLink to="/socials" className="nav-link">My Socials</NavLink>
+                <MenuItem href="/experience">My Professional Experience</MenuItem>
+              </Li>
+              <Li>
+                <MenuItem href="/contact">My Socials</MenuItem>
               </Li> */}
             </Ul>
             <Button onClick={toggleMenu}>
@@ -107,16 +109,16 @@ const MenuItem = styled.a`
     }
 `
 
-const NavbarName = styled.a`
-    text-decoration: none;
-    color: white;
-    font-size: 1.8em;
-    cursor: pointer;
+// const NavbarName = styled.a`
+//     text-decoration: none;
+//     color: white;
+//     font-size: 1.8em;
+//     cursor: pointer;
 
-    @media all and (max-width: 960px) {
-        content: "William";
-    }
-`
+//     @media all and (max-width: 960px) {
+//         content: "William";
+//     }
+// `
 
 const Button = styled.button`
     width: 2.5rem;
@@ -142,6 +144,23 @@ const Button = styled.button`
 
     @media all and (max-width: 960px) {
         display: block;
+    }
+`
+
+const Social = styled.a`
+
+&:hover {
+  cursor: pointer;
+}
+`
+
+const Img = styled.img`
+    height: 3.8rem;
+    width: 3.8rem;
+
+    @media all and (min-width: 360px) and (max-width: 969px) {
+        height: 3rem;
+        width: 3rem;
     }
 `
 

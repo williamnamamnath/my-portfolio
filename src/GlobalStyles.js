@@ -47,9 +47,15 @@ h4 {
 }
 
 .body-space {
-    gap: 2rem;
-    padding: 0 2rem;
+    max-width: 1300px !important;
+    margin: 0 auto;
+    position: relative;
     overflow-x: hidden;
+
+    @media all and (max-width: 1300px) {
+        padding: 0 1.5rem;
+        
+    }
 }
 
 .mobile-nav {
@@ -93,30 +99,6 @@ h4 {
     padding: 15px;
     flex-wrap: wrap;
     color: white;
-}
-
-@media all and (min-width: 360px) {
-
-    .body-space {
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    p {
-    font-size: 23px;
-    flex-wrap: wrap;
-    text-align: center;
-    }
-
-    h3 {
-        flex-wrap: wrap;
-    }
 }
 `;
 

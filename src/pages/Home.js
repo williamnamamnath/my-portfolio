@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
+import AboutMe from "./AboutMe";
+
 import styled from "styled-components";
 import picture from "../images/profile-picture.jpg";
 import email from "../images/134146_mail_email_icon.png";
@@ -8,27 +10,15 @@ import github from "../images/211904_social_github_icon.png";
 import linkedin from "../images/5296501_linkedin_network_linkedin logo_icon.png";
 
 
-const H2 = styled.h2`
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  font-size: 55px;
+const H1 = styled.h1`
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  font-size: 4rem;
   flex-wrap: wrap;
+  line-height: 2rem;
 
   @media all and (min-width: 360px) and (max-width: 969px) {
-  font-size: 35px;
-  flex-wrap: wrap;
-  }
-`
-
-const OtherH1 = styled.h1`
-color: #0046EA;
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  font-size: 60px;
-  flex-wrap: wrap;
-
-  @media all and (min-width: 360px) and (max-width: 969px) {
-  font-size: 40px;
+  font-size: 2.5rem;
   flex-wrap: wrap;
   }
 `
@@ -158,6 +148,7 @@ const Button = styled.button`
     padding: 1rem 2rem;
     margin: 2rem 0;
     border-radius: 1.5rem;
+    max-height: 8rem;
 }
 `
 
@@ -178,10 +169,6 @@ const Home = () => {
 
 const navigate = useNavigate();
 
-const navAbout = () => {
-  navigate('/about'); 
-};
-
 const navProjects = () => {
   navigate('/all-projects'); 
 };
@@ -194,10 +181,14 @@ const navProjects = () => {
     <Picture src={picture} alt="Picture of William Nam-Amnath"></Picture>
     </Div>
     <NameCard>
-      <H2>William</H2>
-      <OtherH1>Nam-Amnath</OtherH1>
-      <h2 style={{textAlign: "center"}}>▶ Full-Stack Web Developer ◀</h2>
-      <h3>📍 Montreal, QC</h3> 
+      <H1>William</H1>
+      <H1>Nam-Amnath</H1>
+      <br/>
+      <br/>
+      <h3 style={{textAlign: "center"}}>Full-Stack Web Developer with a Passion for the Frontend</h3>
+      <hr/>
+      <h3 style={{textAlign: "center"}}>Transitioning Abstract Ideas to Stunning Reality</h3>
+      <h4>📍 Montreal, QC</h4> 
       <SocialsDiv>
       <Social href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"/></Social>
       <Social href="https://www.linkedin.com/in/william-nam-amnath/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo"/></Social>
@@ -209,6 +200,16 @@ const navProjects = () => {
       <br/>
       <br/>
 
+      <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
       <PageSpacing />
     <ParentDiv>
       <NameCard>
@@ -227,21 +228,12 @@ const navProjects = () => {
     </ParentDiv>
     <br/>
     <br/>
-    <br/>    
-   
     <br/>
     <br/>
     <br/>
-    <PageSpacing />
-    <SocialsDiv>
-      <Button onClick={navAbout}>
-        Learn More About Me 🙋‍♂️
-      </Button>
-      <Button onClick={navProjects}>
-        View My Projects 💻
-      </Button>
-    </SocialsDiv>
-    <PageSpacing />
+    <br/>
+    <br/>
+    <br/>
 
     <br/>
     <br/>
@@ -249,6 +241,41 @@ const navProjects = () => {
     <br/>
     <br/>
     <br/>
+    <AboutMe />
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <PageSpacing />
+    <h3 style={{textAlign: "center", color: "white"}}>Visit this section below for more information on my projects</h3>
+    <SocialsDiv>
+      <Button onClick={navProjects}>
+        View My Projects 💻
+      </Button>
+    </SocialsDiv>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <PageSpacing />
     </div>
   );
 }

@@ -12,15 +12,15 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
                 <br/>
 
             <ul>
-              <li>
-                <MenuItem href="/about">About Me</MenuItem>
+            <li>
+                <MenuItem href="all-projects">My Projects</MenuItem>
+              </li>
+              {/* <li>
+                <MenuItem href="/experience">My Professional Experience</MenuItem>
               </li>
               <li>
-                <MenuItem href="/all-projects">My Projects</MenuItem>
-              </li>
-              {/* <Li>
-              <NavLink to="/socials" className="nav-link">My Socials</NavLink>
-              </Li> */}
+                <MenuItem href="/contact">My Socials</MenuItem>
+              </li> */}
             </ul>
             </NavContainer>
         </div>
