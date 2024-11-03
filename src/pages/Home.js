@@ -170,7 +170,7 @@ const Home = () => {
 const navigate = useNavigate();
 
 const navProjects = () => {
-  navigate('/all-projects'); 
+  navigate('/projects'); 
 };
 
   return (
