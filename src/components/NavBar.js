@@ -26,7 +26,7 @@ const navProjects = () => {
 
         <Nav>
             <NavContent>
-            <Social href="/"><Img src={name} alt="W logo"/></Social>
+            <Social href="/"><Img src={name} alt="website logo"/></Social>
             <Ul>
               <Li>
                 <MenuItem onClick={navProjects}>My Projects</MenuItem>

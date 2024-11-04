@@ -6,9 +6,9 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
 
     const navigate = useNavigate();
 
-    const navProjects = () => {
-      navigate('/projects'); 
-    };
+const navProjects = () => {
+  navigate('/projects'); 
+};
 
 
     return (
