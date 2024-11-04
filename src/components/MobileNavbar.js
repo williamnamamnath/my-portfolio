@@ -1,6 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 import styled from "styled-components";
 
 const MobileNavbar = ({ isOpen, toggleMenu }) => {
+
+    const navigate = useNavigate();
+
+    const navProjects = () => {
+      navigate('/projects'); 
+    };
 
 
     return (
@@ -13,7 +21,7 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
 
             <ul>
             <li>
-                <MenuItem href="/projects">My Projects</MenuItem>
+                <MenuItem onClick={navProjects}>My Projects</MenuItem>
               </li>
               {/* <li>
                 <MenuItem href="/experience">My Professional Experience</MenuItem>

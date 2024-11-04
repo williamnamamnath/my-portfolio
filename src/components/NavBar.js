@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import name from "../images/w-logo.png"; 
 
@@ -13,6 +14,12 @@ const NavBar = () => {
         setMenuClicked(!menuClicked);
     };
 
+    const navigate = useNavigate();
+
+const navProjects = () => {
+  navigate('/projects'); 
+};
+
     return (
         <>
         <MobileNavbar isOpen={menuClicked} toggleMenu={toggleMenu} />
@@ -22,7 +29,7 @@ const NavBar = () => {
             <Social href="/"><Img src={name} alt="W logo"/></Social>
             <Ul>
               <Li>
-                <MenuItem href="/projects">My Projects</MenuItem>
+                <MenuItem onClick={navProjects}>My Projects</MenuItem>
               </Li>
               {/* <Li>
                 <MenuItem href="/experience">My Professional Experience</MenuItem>
