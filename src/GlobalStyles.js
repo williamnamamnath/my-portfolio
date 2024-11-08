@@ -5,9 +5,10 @@ const GlobalStyles = createGlobalStyle`
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #060414;
+    background-image: radial-gradient(circle, #1F184E, #0A0529);
     margin: 0;
     overflow-x: hidden;
+    color: whitesmoke;
 
     @media all and (min-width: 969px) {
         width: 100vw;
@@ -43,7 +44,7 @@ h4 {
 }
 
 .project-space {
-    color: white;
+    color: whitesmoke;
 }
 
 .body-space {
@@ -92,7 +93,7 @@ h4 {
 
 
 .footer {
-    background-color: #060414;
+    background-color: #0A0529;
     box-shadow: 0 2px 10px 0 #0046EA;
     font-size: 15px;
     gap: 10px;

@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 import styled from "styled-components";
 
 import banffPhoto from "../images/wnam-amnath.JPG";
@@ -24,36 +22,33 @@ display: flex;
 `
 
 const Paragraph = styled.p`
-    font-size: large;
+    font-size: 1.2rem;
     text-align: justify;
-    margin: 20px;
-    padding: 15px;
+    margin: 0.6rem;
+    padding: 1.5rem;
     line-height: 1.5;
-    color: white;
+    color: whitesmoke;
 
     @media all and (min-width: 360px) and (max-width: 969px) {
-    margin: 15px;
-    padding: 5px;
-  flex-wrap: wrap;
+    font-size: 1rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
   }
 `
 
 const CenteredParagraph = styled.p`
+    font-size: 1.2rem;
     text-align: center;
-    margin: 20px;
-    padding: 15px;
-    color: white;
+    margin: 0.6rem;
+    padding: 1.5rem;
+    color: whitesmoke;
 
 @media all and (min-width: 360px) and (max-width: 969px) {
-    margin: 10px;
-    padding: 5px;
+  font-size: 1rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
   flex-wrap: wrap;
   }
-`
-
-const H2 = styled.h2`
-    text-align: center;
-    font-style: italic;
 `
 
 const H3 = styled.h3`
@@ -62,37 +57,20 @@ const H3 = styled.h3`
     color: white;
 `
 
-const ParentDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  `
-
-  const ChildDiv = styled.div`
-    display:inline-block;
-    box-shadow: 0 2px 20px 0 gray;
-    color: black;
-    background-color: #efd6ac;
-    border-radius: 30px;
-    margin: 20px;
-    padding: 25px;
-  `
-
 const Anchor = styled.a`
     color: #efd6ac;
+    text-decoration: none;
 `
 
 const H1 = styled.h1`
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 60px;
+  font-size: 3.8rem;
   flex-wrap: wrap;
-  color: white;
+  color: whitesmoke;
   
   @media all and (min-width: 360px) and (max-width: 969px) {
-    font-size: 50px;
-    font-weight: 600;
+  font-size: 2.7rem;
   flex-wrap: wrap;
   }
 `
@@ -104,13 +82,12 @@ const PageSpacing = styled.div`
 const OtherH2 = styled.h2`
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 60px;
+  font-size: 3.5rem;
   flex-wrap: wrap;
   color: white;
   
   @media all and (min-width: 360px) and (max-width: 969px) {
-    font-size: 50px;
-    font-weight: 600;
+  font-size: 2.3rem;
   flex-wrap: wrap;
   }
 `
@@ -118,27 +95,44 @@ const OtherH2 = styled.h2`
 
 const AboutMe = () => {
 
-    useEffect(() => {
-        document.title = "About Me"
-    }, []);
-
     return (
         <>
         <PageSpacing>
         <div className="body-space">
-        <H1>About Me 🙋‍♂️</H1>
+        <H1>About Me</H1>
         <ImgDiv>
         <Picture src={banffPhoto} alt="Picture of William Nam-Amnath"></Picture>
         </ImgDiv>
-        <h2 style={{fontStyle: "italic", color: "white"}}>👋 Hi there! </h2>
-        <CenteredParagraph>My name is <span style={{color: "#0046EA"}}>William Nam-Amnath</span> 
         <br/>
-        and I am a full-stack web developer from Montreal, Canada.</CenteredParagraph>
-        <Paragraph>I am a junior developer having graduated from the Concordia University Web Development bootcamp program in May 2024. Throughout the program, I learned and practiced using the following techniques stacks/concepts: </Paragraph>
+        <CenteredParagraph>
+        <h2 style={{fontStyle: "italic", color: "white"}}>👋 Hi there! </h2>
+        My name is William Nam-Amnath and I am a full-stack web developer from Montreal, Canada.</CenteredParagraph>
+        <br/>
+        <Paragraph>I am a junior developer having graduated from the Concordia University Web Development bootcamp program in May 2024. Throughout the program, I learned about the <Anchor href="https://codefinity.com/blog/MERN-Stack-Web-Development?utm_source=google&utm_medium=cpc&utm_campaign=21380043065&utm_content=&utm_term=&gad_source=1&gclid=Cj0KCQiAire5BhCNARIsAM53K1j-s9VbvnQEd8gpDJHnjjP3ZcL5qiq2zNRQbkji1sUbIyR-YRCoitUaAv3EEALw_wcB">
+        MERN stack</Anchor>  and worked on projects while using these languages and libraries.
+        </Paragraph>
+        <br/>
+        <OtherH2>My Coding Philosophy</OtherH2>
+        <Paragraph>
+        As a developer, I believe patience is a key attribute to possess. As someone that enjoys taking on challenges, I understand that problem-solving is a skill that can’t be mastered overnight and I am willing to put in the time and effort to get over any obstacle. 
+        </Paragraph>
+        <br/>
+        <Paragraph>
+        Moreover, attention to detail is an essential and valuable aspect that I take pride in. As a developer that enjoys making sure that every frame is to my liking, I only provide my maximum effort to make sure that the product I deliver is of excellent quality, whether I’m working on a personal project or working in teams. 
+        </Paragraph>
+        <br/>
+        <Paragraph>
+        Lastly, as a developer, it is important that one stays organized. Whether we’re talking about team planning or something as simple as how you arrange your files in your project, it can be easy to lose track of your work and your progress. Therefore, staying organized is essential and is a quality that can be easy to neglect. 
+        </Paragraph>
+        <br/>
+        <br/>
         <br/>
         <H3>Quoi De Neuf? 🤔</H3>
         <Paragraph>
-        At the moment, I currently work at the Montreal Children Hospital as an administrative agent. However, I am actively looking for a position in web development. Since graduating in May, I have taken on a freelance contract from one of the colleagues I currently work with. <Anchor href="/nfib">Feel free to take a look!</Anchor>
+        At the moment, I currently work at the Montreal Children Hospital as an administrative agent. However, I am actively looking for a position in web development. 
+        <br/>
+        <br/>
+        Since graduating in May, I have taken on a freelance contract from one of the colleagues I currently work with. <Anchor href="/nfib">Feel free to take a look!</Anchor>
         </Paragraph>
         <br/>
         <H3>Gaining New Knowledge 📚</H3>
@@ -151,52 +145,6 @@ const AboutMe = () => {
         If I’m not coding, you can find me playing basketball, listening to music or watching movies. 
         </Paragraph>
         <br/>
-        <br/>
-        <OtherH2>My Coding Philosophy</OtherH2>
-        <Paragraph>
-        As a developer, I believe patience is a key attribute to possess. As someone that enjoys taking on challenges, I understand that problem-solving is a skill that can’t be mastered overnight and I am willing to put in the time and effort to get over any obstacle. 
-        </Paragraph>
-        <Paragraph>
-        Moreover, attention to detail is an essential and valuable aspect that I take pride in. As a developer that enjoys making sure that every frame is to my liking, I only provide my maximum effort to make sure that the product I deliver is of excellent quality, whether I’m working on a personal project or working in teams. 
-        </Paragraph>
-        <Paragraph>
-        Lastly, as a developer, it is important that one stays organized. Whether we’re talking about team planning or something as simple as how you arrange your files in your project, it can be easy to lose track of your work and your progress. Therefore, staying organized is essential and is a quality that can be easy to neglect. 
-        </Paragraph>
-        <br/>
-        <br/>
-        <OtherH2>My Education and Internships</OtherH2>
-        <ParentDiv>
-            <ChildDiv>
-                <H2><span style={{color: "#0046EA"}}>October 2024 - Present</span></H2>
-                <ul>
-                    <li><span style={{fontWeight: "bold"}}>Frontend developer intern</span> for Loriginal.org, also known as Artur.Art</li>
-                </ul>
-            </ChildDiv>
-        </ParentDiv>
-        <br/>
-        <ParentDiv>
-            <ChildDiv>
-                <H2><span style={{color: "#0046EA"}}>October 2023 - May 2024</span></H2>
-                <ul>
-                    <li><span style={{fontWeight: "bold"}}>Certificate</span> from the Concordia University Web Development Bootcamp</li>
-                </ul>
-            </ChildDiv>
-        </ParentDiv>
-        <br/>
-        <ParentDiv>
-            <ChildDiv>
-                <H2><span style={{color: "#0046EA"}}>August 2017 - April 2021</span></H2>
-                <ul>
-                    <li><span style={{fontWeight: "bold"}}>Bachelor of Education</span> from McGill University</li>
-                    <br/>
-                    <ul>
-                        <li>
-                        Teaching English as a Second Language (TESL)
-                        </li>
-                    </ul>
-                </ul>
-            </ChildDiv>
-        </ParentDiv>
         <br/>
         </div>
         </PageSpacing>

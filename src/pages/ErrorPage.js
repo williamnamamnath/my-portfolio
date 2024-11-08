@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 
 const Span = styled.span`
@@ -11,6 +13,10 @@ const Span = styled.span`
 `
 
 const ErrorPage = () => {
+
+  useEffect(() => {
+    document.title = "Error!"
+}, []);
 
     return (
         <>

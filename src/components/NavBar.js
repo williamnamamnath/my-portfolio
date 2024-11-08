@@ -31,12 +31,9 @@ const navProjects = () => {
               <Li>
                 <MenuItem onClick={navProjects}>My Projects</MenuItem>
               </Li>
-              {/* <Li>
-                <MenuItem href="/experience">My Professional Experience</MenuItem>
-              </Li>
               <Li>
-                <MenuItem href="/contact">My Socials</MenuItem>
-              </Li> */}
+                <MenuItem href="/experience">My Experience and Education</MenuItem>
+              </Li>
             </Ul>
             <Button onClick={toggleMenu}>
                 <span class={"material-symbols-outlined"} style={{fontSize: "1.8rem"}}>
@@ -137,7 +134,8 @@ const Button = styled.button`
     border: none;
     border-radius: 0.4rem;
     color: white;
-    background: linear-gradient(90deg, #3672FF 0%, #0046EA 100%);
+    /* background: linear-gradient(90deg, #3672FF 0%, #0046EA 100%); */
+    background-color: transparent;
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -145,8 +143,8 @@ const Button = styled.button`
 
     &:hover {
         color: #0046EA;
-        background: black;
-        border: 1px solid #0046EA;
+        /* background: black;
+        border: 1px solid #0046EA; */
     }
 
     @media all and (max-width: 960px) {
@@ -162,12 +160,12 @@ const Social = styled.a`
 `
 
 const Img = styled.img`
-    height: 3.8rem;
-    width: 3.8rem;
+    height: 3.6rem;
+    width: 3.6rem;
 
     @media all and (min-width: 360px) and (max-width: 969px) {
-        height: 3rem;
-        width: 3rem;
+        height: 2.7rem;
+        width: 2.7rem;
     }
 `
 

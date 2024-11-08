@@ -60,6 +60,19 @@ const H2 = styled.h2`
   text-align: center;
 `
 
+const H1 = styled.h1`
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 3.8rem;
+  flex-wrap: wrap;
+  color: whitesmoke;
+  
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 2.5rem;
+  flex-wrap: wrap;
+  }
+`
+
 const PageSpacing = styled.div`
   margin: 8rem 0;
 
@@ -92,7 +105,7 @@ const ProjectsPage = () => {
     return (
       <>
       <PageSpacing />
-      <h1 style={{color: "white"}}>My Projects 💻</h1>   
+      <H1>My Projects 💻</H1>   
 
       <SocialsDiv>
       <Button onClick={handleClickNFIB}>

@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, React } from "react";
 
 import styled from "styled-components";
 import projectNFIB from "../images/NFIB-home-page.JPG";
@@ -19,7 +19,7 @@ const Picture = styled.img`
 const H1 = styled.h1`
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.8rem;
   flex-wrap: wrap;
   
   @media all and (min-width: 360px) and (max-width: 969px) {
@@ -54,13 +54,13 @@ justify-content: center;
 
 const TechStack = styled.i`
 font-size: 8rem;
-background-color: #060414;
+background-color: transparent;
 padding: 5px;
 border-radius: 10px;
 flex-wrap: wrap;
 
 @media all and (min-width: 360px) and (max-width: 969px) {
-  font-size: 3rem;
+  font-size: 3.1rem;
   display: flex;
   align-items: center;
   justify-content: center; 
@@ -93,6 +93,10 @@ const Paragraph = styled.p`
 
 const H3 = styled.h3`
     text-align: left;
+`
+
+const SecondH3 = styled.h3`
+    text-align: center;
 `
 
 const H2 = styled.h2`
@@ -141,15 +145,20 @@ const ProjectLink = styled.a`
 
 const NFIB = () => {
 
+  useEffect(() => {
+    document.title = "Project NFIB"
+}, []);
+
     return (
         <>
         <PageSpacing />
             <div className="project-space">
             <H1>
             <ProjectLink href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer">
-              NFIB 🧬
+              Project NFIB 🧬
               </ProjectLink>
               </H1>
+              <SecondH3>(work in progress)</SecondH3>
             <br/>
                 <ImgDiv>
                 <ProjectLink href="https://github.com/williamnamamnath/project-nfib" target="_blank" rel="noopener noreferrer">

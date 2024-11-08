@@ -21,14 +21,14 @@ const navProjects = () => {
 
             <ul>
             <li>
+                <MenuItem href="/">Home</MenuItem>
+              </li>
+            <li>
                 <MenuItem onClick={navProjects}>My Projects</MenuItem>
               </li>
-              {/* <li>
-                <MenuItem href="/experience">My Professional Experience</MenuItem>
-              </li>
               <li>
-                <MenuItem href="/contact">My Socials</MenuItem>
-              </li> */}
+                <MenuItem href="/experience">My Experience and Education</MenuItem>
+              </li>
             </ul>
             </NavContainer>
         </div>

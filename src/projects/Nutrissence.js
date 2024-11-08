@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, React } from "react";
 
 import styled from "styled-components";
 import projectNutrissence from "../images/Nutrissence-home-page.JPG";
@@ -40,13 +40,13 @@ justify-content: center;
 
 const TechStack = styled.i`
 font-size: 8rem;
-background-color: #060414;
+background-color: transparent;
 padding: 5px;
 border-radius: 10px;
 flex-wrap: wrap;
 
 @media all and (min-width: 360px) and (max-width: 969px) {
-  font-size: 3rem;
+  font-size: 3.1rem;
   display: flex;
   align-items: center;
   justify-content: center; 
@@ -94,7 +94,7 @@ const SecondH2 = styled.h2`
 const H1 = styled.h1`
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.8rem;
   flex-wrap: wrap;
   
   @media all and (min-width: 360px) and (max-width: 969px) {
@@ -139,13 +139,17 @@ const ProjectLink = styled.a`
 
 const Nutrissence = () => {
 
+  useEffect(() => {
+    document.title = "Project Nutrissence"
+}, []);
+
     return (
         <>
         <PageSpacing />
             <div className="project-space">
             <H1>
             <ProjectLink href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer">
-              Nutrissence 🍃
+              Project Nutrissence 🍃
               </ProjectLink>
               </H1>
             <br/>

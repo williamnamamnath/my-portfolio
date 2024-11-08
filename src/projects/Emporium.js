@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, React } from "react";
 
 import styled from "styled-components";
 import projectEmporium from "../images/Emporium-home-page.JPG";
@@ -40,13 +40,13 @@ justify-content: center;
 
 const TechStack = styled.i`
 font-size: 8rem;
-background-color: #060414;
+background-color: transparent;
 padding: 5px;
 border-radius: 10px;
 flex-wrap: wrap;
 
 @media all and (min-width: 360px) and (max-width: 969px) {
-  font-size: 3rem;
+  font-size: 3.1rem;
   display: flex;
   align-items: center;
   justify-content: center; 
@@ -55,14 +55,14 @@ flex-wrap: wrap;
 `
 
 const Paragraph = styled.p`
-    font-size: 50px;
+    font-size: 1.4rem;
     text-align: justify;
     margin: 20px;
     padding: 15px;
     line-height: 1.5;
 
     @media all and (min-width: 360px) {
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 1.7;
     margin: auto;
     padding: 0%;
@@ -70,22 +70,27 @@ const Paragraph = styled.p`
 `
 
 const H3 = styled.h3`
+    font-size: 1.5rem;
     text-align: left;
+
+    @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 1.4rem;
+  }
 `
 
 const LI = styled.li`
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 1.4rem;
 
   @media all and (min-width: 360px) and (max-width: 969px) {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 `
 
 const H1 = styled.h1`
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.8rem;
   flex-wrap: wrap;
   
   @media all and (min-width: 360px) and (max-width: 969px) {
@@ -139,13 +144,17 @@ const ProjectLink = styled.a`
 
 const Emporium = () => {
 
+  useEffect(() => {
+    document.title = "Project E-Wear Emporium"
+}, []);
+
     return (
         <>
         <PageSpacing />
             <div className="project-space">
             <H1>
             <ProjectLink href="https://github.com/williamnamamnath/project-GROUP-e-commerce" target="_blank" rel="noopener noreferrer">
-              E-Wear Emporium 🏬
+              Project E-Wear Emporium 🏬
               </ProjectLink>
               </H1>
                 <br/>

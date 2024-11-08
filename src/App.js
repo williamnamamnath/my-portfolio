@@ -6,7 +6,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import NFIB from "./projects/NFIB";
 import Nutrissence from "./projects/Nutrissence";
 import Emporium from "./projects/Emporium";
-import Socials from "./pages/Socials";
+import Experience from "./pages/Experience";
 import ErrorPage from "./pages/ErrorPage";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -27,7 +27,7 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutMe />} />
                 <Route path="/projects" element={<ProjectsPage />} />
-                <Route path="/contact" element={<Socials />} />
+                <Route path="/experience" element={<Experience />} />
                 <Route path="/nfib" element={<NFIB />} />
                 <Route path="/nutrissence" element={<Nutrissence />} />
                 <Route path="/emporium" element={<Emporium />} />

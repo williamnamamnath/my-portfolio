@@ -5,17 +5,18 @@ import AboutMe from "./AboutMe";
 
 import styled from "styled-components";
 import picture from "../images/profile-picture.jpg";
-import email from "../images/134146_mail_email_icon.png";
-import github from "../images/211904_social_github_icon.png";
-import linkedin from "../images/5296501_linkedin_network_linkedin logo_icon.png";
+import email from "../images/email-logo.png";
+import github from "../images/github-logo.png";
+import linkedin from "../images/linkedin-logo.png";
 
 
 const H1 = styled.h1`
     font-family: "Poppins", sans-serif;
     text-align: center;
-  font-size: 4rem;
+  font-size: 3.8rem;
   flex-wrap: wrap;
   line-height: 2rem;
+  color: whitesmoke;
 
   @media all and (min-width: 360px) and (max-width: 969px) {
   font-size: 2.5rem;
@@ -76,7 +77,7 @@ const Picture = styled.img`
 
 const TechStack = styled.i`
 font-size: 8rem;
-background-color: #060414;
+background-color: transparent;
 padding: 5px;
 border-radius: 10px;
 flex-wrap: wrap;
@@ -173,6 +174,10 @@ const navProjects = () => {
   navigate('/projects'); 
 };
 
+const navExperience = () => {
+  navigate('/experience'); 
+};
+
   return (
     <div className="body-space">
       <PageSpacing />
@@ -240,7 +245,16 @@ const navProjects = () => {
     <br/>
     <br/>
     <br/>
-    <AboutMe />
+    <PageSpacing />
+    <h3 style={{textAlign: "center", color: "white"}}>Visit these sections below for more information on myself</h3>
+    <SocialsDiv>
+      <Button onClick={navProjects}>
+        View My Projects 💻
+      </Button>
+      <Button onClick={navExperience}>
+         My Education and Experience 🎓💼
+      </Button>
+    </SocialsDiv>
 
     <br/>
     <br/>
@@ -259,15 +273,8 @@ const navProjects = () => {
     <br/>
     <br/>
     <br/>
-    <PageSpacing />
-    <h3 style={{textAlign: "center", color: "white"}}>Visit this section below for more information on my projects</h3>
-    <SocialsDiv>
-      <Button onClick={navProjects}>
-        View My Projects 💻
-      </Button>
-    </SocialsDiv>
-    <br/>
-    <br/>
+    <AboutMe />
+
     <br/>
     <br/>
     <br/>
