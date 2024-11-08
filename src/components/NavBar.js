@@ -20,6 +20,10 @@ const navProjects = () => {
   navigate('/projects'); 
 };
 
+const navExperience = () => {
+    navigate('/experience'); 
+  };
+
     return (
         <>
         <MobileNavbar isOpen={menuClicked} toggleMenu={toggleMenu} />
@@ -32,7 +36,7 @@ const navProjects = () => {
                 <MenuItem onClick={navProjects}>My Projects</MenuItem>
               </Li>
               <Li>
-                <MenuItem href="/experience">My Experience and Education</MenuItem>
+                <MenuItem onClick={navExperience}>My Experience and Education</MenuItem>
               </Li>
             </Ul>
             <Button onClick={toggleMenu}>

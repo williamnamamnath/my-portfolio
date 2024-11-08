@@ -28,13 +28,14 @@ const ParentDiv = styled.div`
 
 const H1 = styled.h1`
   font-family: "Open Sans", sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 3.8rem;
   flex-wrap: wrap;
   color: whitesmoke;
   
   @media all and (min-width: 360px) and (max-width: 969px) {
-    font-size: 2.5rem;
+  text-align: center;
+  font-size: 2.5rem;
   flex-wrap: wrap;
   }
 `
@@ -54,7 +55,27 @@ const Experience = () => {
         <>
         <PageSpacing>
         <div className="popup-window">
-        <H1>My Education</H1>
+        <H1>My Professional Experience</H1>
+        <ParentDiv>
+            <ChildDiv>
+                <H2><span style={{color: "#1C6E8C"}}>July 2024 - Present</span></H2>
+                <ul>
+                    <li><span style={{fontWeight: "bold"}}>Freelance project</span> - Creating a website for a subdivision of the medical genetics department at the Montreal University Health Centre</li>
+                </ul>
+            </ChildDiv>
+        </ParentDiv>
+        <br/>
+        <br/>
+        <H1>My Education and Internships</H1>
+        <ParentDiv>
+            <ChildDiv>
+                <H2><span style={{color: "#1C6E8C"}}>October 2024</span></H2>
+                <ul>
+                    <li><span style={{fontWeight: "bold"}}>Frontend Developer Intern</span> at Loriginal.org, also known as Artur.Art</li>
+                </ul>
+            </ChildDiv>
+        </ParentDiv>
+        <br/>
         <ParentDiv>
             <ChildDiv>
                 <H2><span style={{color: "#1C6E8C"}}>October 2023 - May 2024</span></H2>

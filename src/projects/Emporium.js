@@ -57,15 +57,15 @@ flex-wrap: wrap;
 const Paragraph = styled.p`
     font-size: 1.4rem;
     text-align: justify;
-    margin: 20px;
-    padding: 15px;
+    margin: 0.6rem;
+    padding: 1.5rem;
     line-height: 1.5;
 
     @media all and (min-width: 360px) {
     font-size: 1.2rem;
     line-height: 1.7;
-    margin: auto;
-    padding: 0%;
+    margin: 0.2rem;
+    padding: 0.2rem;
     }
 `
 

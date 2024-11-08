@@ -78,17 +78,18 @@ const LI = styled.li`
 `
 
 const Paragraph = styled.p`
-    font-size: large;
+    font-size: 1.4rem;
     text-align: justify;
-    margin: 20px;
-    padding: 15px;
+    margin: 0.6rem;
+    padding: 1.5rem;
     line-height: 1.5;
 
-    @media all and (min-width: 360px) and (max-width: 969px) {
-    margin: 15px;
-    padding: 5px;
-  flex-wrap: wrap;
-  }
+    @media all and (min-width: 360px) {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    }
 `
 
 const H3 = styled.h3`
@@ -166,13 +167,13 @@ const NFIB = () => {
                 </ImgDiv>
                 <br/>
                     <InnerDiv>
-                        <SecondH2>What is Project NFIB (Neurofibromatosis)?</SecondH2>
+                        <SecondH2>What is Project NFIB?</SecondH2>
                         <Paragraph>
-                            Project NFIB is a freelance project that was proposed to me by one of the medical geneticists that I work with at the Montreal University Health Centre (MUHC).
+                            Project NFIB, also known as Project Neurofibromatosis, is a freelance project that was offered to me by one of the medical geneticists that I work with at the Montreal University Health Centre (MUHC).
                         </Paragraph> 
                         <br/>
                             <Paragraph>
-                                With the help of this website, patients and their families will be able to get more information on the genetic disease known as neurofibromatosis type 1 (NFIB/NF1), what are the related symptoms and treatment how to send referrals to the genetics department at the MUHC. 
+                                With this website, visitors will be able to learn more about the NFIB clinic at the MUHC and how to refer patients or family members to the clinic. 
                             </Paragraph>
                             <br/>
                     <H3>Responsibilities:</H3>
