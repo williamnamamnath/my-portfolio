@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import name from "../images/w-logo.png"; 
-
 import styled from "styled-components";
 import MobileNavbar from "./MobileNavbar";
+
+import name from "../images/w-logo.png";
+import email from "../images/small-email.png";
+import github from "../images/small-github.png";
+import linkedin from "../images/small-linkedin.png"; 
+
 
 const NavBar = () => {
 
@@ -36,7 +40,14 @@ const navExperience = () => {
                 <MenuItem onClick={navProjects}>My Projects</MenuItem>
               </Li>
               <Li>
-                <MenuItem onClick={navExperience}>My Experience and Education</MenuItem>
+                <MenuItem onClick={navExperience}>My Professional Experience</MenuItem>
+              </Li>
+              <Li>
+                <SocialsDiv>
+                <SocialLogo href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"/></SocialLogo>
+                <SocialLogo href="https://www.linkedin.com/in/william-nam-amnath/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo"/></SocialLogo>
+                <SocialLogo href="mailto:william.nam-amnath@mail.mcgill.ca" target="_blank" rel="noopener noreferrer"><img src={email} alt="email logo"/></SocialLogo>
+                </SocialsDiv>
               </Li>
             </Ul>
             <Button onClick={toggleMenu}>
@@ -117,17 +128,6 @@ const MenuItem = styled.a`
     }
 `
 
-// const NavbarName = styled.a`
-//     text-decoration: none;
-//     color: white;
-//     font-size: 1.8em;
-//     cursor: pointer;
-
-//     @media all and (max-width: 960px) {
-//         content: "William";
-//     }
-// `
-
 const Button = styled.button`
     width: 2.5rem;
     height: 2.5rem;
@@ -138,7 +138,6 @@ const Button = styled.button`
     border: none;
     border-radius: 0.4rem;
     color: white;
-    /* background: linear-gradient(90deg, #3672FF 0%, #0046EA 100%); */
     background-color: transparent;
     line-height: 0;
     cursor: pointer;
@@ -147,8 +146,6 @@ const Button = styled.button`
 
     &:hover {
         color: #0046EA;
-        /* background: black;
-        border: 1px solid #0046EA; */
     }
 
     @media all and (max-width: 960px) {
@@ -171,6 +168,26 @@ const Img = styled.img`
         height: 2.7rem;
         width: 2.7rem;
     }
+`
+
+const SocialsDiv = styled.div`
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: black;
+    border-radius: 30px;
+    margin: 0;
+    padding: 1rem 0;
+`
+
+const SocialLogo = styled.a`
+    transition: transform 0.3s ease;
+
+&:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
 `
 
 export default NavBar;

@@ -144,12 +144,12 @@ const Button = styled.button`
   }
 
   @media all and (min-width: 360px) and (max-width: 969px) {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     flex-wrap: wrap;
     padding: 1rem 2rem;
     margin: 2rem 0;
     border-radius: 1.5rem;
-    max-height: 8rem;
+    max-height: 6rem;
 }
 `
 
@@ -252,7 +252,7 @@ const navExperience = () => {
         View My Projects 💻
       </Button>
       <Button onClick={navExperience}>
-         My Education and Experience 🎓💼
+         My Professional Experience 🎓💼
       </Button>
     </SocialsDiv>
 

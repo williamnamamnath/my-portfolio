@@ -2,6 +2,12 @@ import { useNavigate } from "react-router-dom";
 
 import styled from "styled-components";
 
+import email from "../images/small-email.png";
+import github from "../images/small-github.png";
+import linkedin from "../images/small-linkedin.png"; 
+
+
+
 const MobileNavbar = ({ isOpen, toggleMenu }) => {
 
     const navigate = useNavigate();
@@ -9,6 +15,10 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
 const navProjects = () => {
   navigate('/projects'); 
 };
+
+const navExperience = () => {
+    navigate('/experience'); 
+  };
 
 
     return (
@@ -27,7 +37,14 @@ const navProjects = () => {
                 <MenuItem onClick={navProjects}>My Projects</MenuItem>
               </li>
               <li>
-                <MenuItem href="/experience">My Experience and Education</MenuItem>
+                <MenuItem onClick={navExperience}>My Professional Experience</MenuItem>
+              </li>
+              <li>
+              <SocialsDiv>
+                <SocialLogo href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"/></SocialLogo>
+                <SocialLogo href="https://www.linkedin.com/in/william-nam-amnath/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo"/></SocialLogo>
+                <SocialLogo href="mailto:william.nam-amnath@mail.mcgill.ca" target="_blank" rel="noopener noreferrer"><img src={email} alt="email logo"/></SocialLogo>
+                </SocialsDiv>
               </li>
             </ul>
             </NavContainer>
@@ -72,18 +89,26 @@ const CloseMenu = styled.a`
     cursor: pointer;
 `
 
-// const NavbarName = styled.a`
-//     text-decoration: none;
-//     color: white;
-//     font-size: 1.5em;
-//     cursor: pointer;
-// `
-
 const NavContainer = styled.div`
     width: 60vw;
     height: 100vh;
     background-color: #0D164B;
     padding: 2rem;
+`
+
+const SocialsDiv = styled.div`
+    display: flex; 
+    justify-content: left;
+    align-items: left;
+    gap: 2rem;
+    color: black;
+    border-radius: 30px;
+    margin: 0;
+    padding: 1rem 0;
+`
+
+const SocialLogo = styled.a`
+  cursor: pointer;
 `
 
 export default MobileNavbar;

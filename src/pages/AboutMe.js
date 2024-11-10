@@ -23,7 +23,7 @@ const ImgDiv = styled.div`
 
 const Paragraph = styled.p`
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: center;
     margin: 0.6rem;
     padding: 1.5rem;
     line-height: 1.7;
@@ -31,19 +31,19 @@ const Paragraph = styled.p`
     box-shadow: 0px 2px 20px #0046EA;
     outline: solid 3px #0046EA;
     border-radius: 1rem;
-    background-color: transparent;
+    background-color: #383260;
 
     @media all and (min-width: 360px) and (max-width: 969px) {
     font-size: 1rem;
-    margin: 0.2rem;
-    padding: 1rem;
-    line-height: 1.5;
+    margin: 0;
+    padding: 0.7rem;
+    line-height: 1.7;
   }
 `
 
 const OtherParagraph = styled.p`
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: center;
     margin: 0.6rem;
     padding: 1.5rem;
     line-height: 1.7;
@@ -78,7 +78,7 @@ const H3 = styled.h3`
 `
 
 const Anchor = styled.a`
-    color: #efd6ac;
+    color: #01A7C2;
     text-decoration: none;
 `
 
@@ -152,8 +152,10 @@ const AboutMe = () => {
         At the moment, I currently work at the Montreal Children Hospital as an administrative agent. However, I am actively looking for a position in web development. 
         <br/>
         <br/>
-        Since graduating in May, I have taken on a freelance contract from one of the colleagues I currently work with. <Anchor href="/nfib">Feel free to take a look!</Anchor>
+        Since graduating in May, I have taken on a freelance contract from one of the colleagues I currently work with. <Anchor href="/nfib">Click here to take a look!</Anchor>
         </Paragraph>
+        <br/>
+        <br/>
         <br/>
         <br/>
         <Paragraph>
@@ -162,9 +164,11 @@ const AboutMe = () => {
         </Paragraph>
         <br/>
         <br/>
+        <br/>
+        <br/>
         <Paragraph>
         <H3>My Hobbies 🏀</H3>
-        When I’m not coding, I like to do activities that take my mind off from work to give myself a break. More specifically, I love playing some basketball or going to the gym to let loose. I also enjoy listening to music or watching movies if I'm not looking to be too active. Feel free to give some horror movie recommendations 😏
+        When I’m not coding, I like to do activities that take my mind off from work to give myself a break. More specifically, I love playing some basketball or going to the gym to let loose. I also enjoy listening to music or watching movies if I'm not looking to be too active. Speaking of horror movies, I always love some good recommendations so send them my way if you have any!
         </Paragraph>
         <br/>
         <br/>

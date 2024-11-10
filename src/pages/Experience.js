@@ -41,7 +41,12 @@ const H1 = styled.h1`
 `
 
 const PageSpacing = styled.div`
-  margin: 100px 0;
+  margin: 8rem 0;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    margin: 4.5rem 0;
+    flex-wrap: wrap;
+  }
 `
 
 
@@ -53,8 +58,8 @@ const Experience = () => {
 
     return (
         <>
-        <PageSpacing>
         <div className="popup-window">
+        <PageSpacing />
         <H1>My Professional Experience</H1>
         <ParentDiv>
             <ChildDiv>
@@ -101,7 +106,7 @@ const Experience = () => {
         </ParentDiv>
         <br/>
         </div>
-        </PageSpacing>
+        <PageSpacing />
         </>
     )
 }; 
