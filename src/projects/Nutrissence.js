@@ -166,7 +166,7 @@ const Nutrissence = () => {
                         </Paragraph>
                         <br/>
                         <Paragraph>
-                            Simply put, Nutrissence is a recipe search engine. Each recipe will display essential information that will give clients a better understanding of what can eat or what they should avoid. ***Insert screenshot of recipe details  
+                            Simply put, Nutrissence is a recipe search engine. Each recipe will display essential information that will give clients a better understanding of what can eat or what they should avoid.  
                         </Paragraph>
                         <br/>
                         <Paragraph>

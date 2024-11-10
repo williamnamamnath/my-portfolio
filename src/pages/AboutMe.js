@@ -152,7 +152,7 @@ const AboutMe = () => {
         At the moment, I currently work at the Montreal Children Hospital as an administrative agent. However, I am actively looking for a position in web development. 
         <br/>
         <br/>
-        Since graduating in May, I have taken on a freelance contract from one of the colleagues I currently work with. <Anchor href="/nfib">Click here to take a look!</Anchor>
+        Since graduating in May, I have taken on a freelance contract from one of the colleagues I currently work with. <Anchor href="/nfib" target="_blank" rel="noopener noreferrer">Click here to take a look!</Anchor>
         </Paragraph>
         <br/>
         <br/>
@@ -160,7 +160,7 @@ const AboutMe = () => {
         <br/>
         <Paragraph>
         <H3>Gaining New Knowledge 📚</H3>
-        As a developer, I enjoy learning and acquiring new skills to add to my repertoire in order to become more versatile. I am currently learning <span style={{color: "#01A7C2"}}>Typescript</span> and am looking forward to learning about other tech stacks and libraries. Next on my list is <span style={{color: "#01A7C2"}}>Vue.js</span>.
+        As a developer, I enjoy learning and acquiring new skills to add to my repertoire in order to become more versatile. I am currently learning <Anchor href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">Typescript</Anchor> and am looking forward to learning about other tech stacks and libraries. Next on my list is <Anchor href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</Anchor>.
         </Paragraph>
         <br/>
         <br/>
