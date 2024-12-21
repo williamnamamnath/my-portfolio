@@ -2,6 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Poppins", sans-serif;
@@ -91,6 +94,18 @@ h4 {
     margin-left: -2rem;
 }
 
+.top-btn a {
+    position: fixed;
+    background-color: lightgray;
+    bottom: 5rem;
+    right: 1rem;
+    padding: 0.6rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 20px;
+}
+
+.top-btn img {
+    height: 2rem;
+}
 
 .footer {
     background-color: #0A0529;

@@ -1,7 +1,7 @@
 import { useEffect, React } from "react";
 
 import styled from "styled-components";
-import projectNutrissence from "../images/Nutrissence-home-page.JPG";
+import checkit from "../images/checkit-app.JPG"
 import backToTop from "../images/arrow-up.png"
 
 const Picture = styled.img`
@@ -14,6 +14,18 @@ const Picture = styled.img`
   @media all and (min-width: 360px) and (max-width: 969px) {
     height: 90%;
     width: 90%;
+  }
+`
+
+const H1 = styled.h1`
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 3.8rem;
+  flex-wrap: wrap;
+  
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 2.5rem;
+  flex-wrap: wrap;
   }
 `
 
@@ -31,7 +43,9 @@ const ParentDiv = styled.div`
 
 const NameCard = styled.div`
 display: block;
-color: white;
+//box-shadow: 0 2px 20px 0 #efd6ac;
+color: black;
+//background-color: black;
 border-radius: 30px;
 margin: 20px 40px;
 padding: 15px 30px;
@@ -55,6 +69,15 @@ flex-wrap: wrap;
 }
 `
 
+const LI = styled.li`
+    line-height: 1.5;
+    font-size: 20px;
+
+  @media all and (min-width: 360px) and (max-width: 969px) {
+    font-size: 20px;
+  }
+`
+
 const Paragraph = styled.p`
     font-size: 1.4rem;
     text-align: justify;
@@ -74,34 +97,15 @@ const H3 = styled.h3`
     text-align: left;
 `
 
-const LI = styled.li`
-    line-height: 1.5;
-    font-size: 1.4rem;
-
-  @media all and (min-width: 360px) and (max-width: 969px) {
-    font-size: 1.2rem;
-  }
-`
 
 const H2 = styled.h2`
     text-decoration: underline;
     text-align: center;
+    color: white;
 `
 
 const SecondH2 = styled.h2`
     text-align: center;
-`
-
-const H1 = styled.h1`
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  font-size: 3.8rem;
-  flex-wrap: wrap;
-  
-  @media all and (min-width: 360px) and (max-width: 969px) {
-    font-size: 2.5rem;
-  flex-wrap: wrap;
-  }
 `
 
 const PageSpacing = styled.div`
@@ -138,10 +142,10 @@ const ProjectLink = styled.a`
     color: white;
 `
 
-const Nutrissence = () => {
+const CheckIt = () => {
 
   useEffect(() => {
-    document.title = "Project Nutrissence"
+    document.title = "CheckIt App"
 }, []);
 
     return (
@@ -149,63 +153,50 @@ const Nutrissence = () => {
         <PageSpacing />
             <div className="project-space">
             <H1>
-            <ProjectLink href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer">
-              Project Nutrissence 🍃
+            <ProjectLink href="https://github.com/williamnamamnath/checkit-app" target="_blank" rel="noopener noreferrer">
+            CheckIt ☑️
               </ProjectLink>
               </H1>
             <br/>
                 <ImgDiv>
-                <ProjectLink href="https://github.com/williamnamamnath/project-final" target="_blank" rel="noopener noreferrer">
-                <Picture src={projectNutrissence} alt="Picture of Nutrissence Home Page"></Picture></ProjectLink>
+                <ProjectLink href="https://github.com/williamnamamnath/checkit-app" target="_blank" rel="noopener noreferrer">
+                <Picture src={checkit} alt="Picture of CheckIt Home Page"></Picture></ProjectLink>
                 </ImgDiv>
-                    <br/>
+                <br/>
                     <InnerDiv>
-                        <SecondH2>What is Project Nutrissence?</SecondH2>
+                        <SecondH2>What is CheckIt?</SecondH2>
                         <Paragraph>
-                          <br/>
-                            As someone that takes his health seriously, I wanted to create a resource that provides users with valuable intel on what they can consume depending on the type of diet they would like to follow. 
-                        </Paragraph>
-                        <br/>
-                        <Paragraph>
-                            Simply put, Nutrissence is a recipe search engine. Each recipe will display essential information that will give clients a better understanding of what can eat or what they should avoid.  
-                        </Paragraph>
-                        <br/>
-                        <Paragraph>
-                            And the best part, this website is FREE to use! You simply need to create an account and you'll be able to get started 😊
-                        </Paragraph>
-                        <br/>
+                            The CheckIt app is a project with a keen focus on Typescript, engineered to apply my Typescript skills from a beginner level. CheckIt is a to-do app that allows users to enter items to complete, to check them off or delete them, and they may also clear the whole list of tasks if need be.  
+                        </Paragraph> 
+                            <br/>
                     <H3>Responsibilities:</H3>
                         <ul>
-                            <LI>
-                            Implemented a search engine to retrieve recipes based on ingredients searched
-                            </LI>
                             <br/>
                             <LI>
-                            Integrated a user authentication system that provides logged-in users exclusive access
+                            Designed a straightforward layout for the app to provide users the smoothest experience.
+                            </LI>
+                            <LI>
+                            Created loading, saving and deleting functions in order to present users with their up-to-date list of tasks. 
                             </LI>
                         </ul>
                     </InnerDiv>
+                    <br/>
                     <ParentDiv>
                     <NameCard>
                         <H2>Technologies Used:</H2>
                         <ProjectStack>
                         <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
                         <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
-                        <TechStack className="devicon-react-original-wordmark colored"></TechStack>
-                        </ProjectStack>
-                        <ProjectStack>    
-                        <TechStack className="devicon-javascript-plain colored"></TechStack>
-                        <TechStack className="devicon-mongodb-plain-wordmark colored"></TechStack>
-                        <TechStack className="devicon-nodejs-plain-wordmark colored"></TechStack>
+                        <TechStack className="devicon-typescript-plain colored"></TechStack>
                         </ProjectStack>
                     </NameCard>
                     </ParentDiv>
                     <div className="top-btn">
-                    <a href="/nutrissence"><img src={backToTop} alt="arrow up"/></a>
+                    <a href="/checkit"><img src={backToTop} alt="arrow up"/></a>
                     </div>
             </div>
         </>
     )
 }
 
-export default Nutrissence;
+export default CheckIt;

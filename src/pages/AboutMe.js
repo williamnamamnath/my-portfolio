@@ -148,19 +148,8 @@ const AboutMe = () => {
         <br/>
         <br/>
         <Paragraph>
-        <H3>Quoi De Neuf? 🤔</H3>
-        At the moment, I currently work at the Montreal Children Hospital as an administrative agent. However, I am actively looking for a position in web development. 
-        <br/>
-        <br/>
-        Since graduating in May, I have taken on a freelance contract from one of the colleagues I currently work with. <Anchor href="/nfib" target="_blank" rel="noopener noreferrer">Click here to take a look!</Anchor>
-        </Paragraph>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <Paragraph>
-        <H3>Gaining New Knowledge 📚</H3>
-        As a developer, I enjoy learning and acquiring new skills to add to my repertoire in order to become more versatile. I am currently learning <Anchor href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">Typescript</Anchor> and am looking forward to learning about other tech stacks and libraries. Next on my list is <Anchor href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</Anchor>.
+        <H3>Constant Growth is Key 📚</H3>
+        As a developer, I enjoy learning and acquiring new skills to add to my repertoire in order to become more versatile. I am currently learning <Anchor href="https://flutter.dev/?gad_source=1&gclid=CjwKCAiApY-7BhBjEiwAQMrrEWtDcYA4zY_R4N_9fS0BlcRoVui6y9xUtQDstBCg7vL5rlpMdBOIHhoCO94QAvD_BwE&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer">Flutter</Anchor> and <Anchor href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</Anchor> and I am looking forward to learning more tech stacks and libraries soon. Next on my list is <Anchor href="https://www.ruby-lang.org/en/" target="_blank" rel="noopener noreferrer">Ruby</Anchor>.
         </Paragraph>
         <br/>
         <br/>

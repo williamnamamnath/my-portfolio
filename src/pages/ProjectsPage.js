@@ -101,6 +101,10 @@ const ProjectsPage = () => {
       const handleClickEmporium = () => {
         navigate('/emporium'); 
       };
+
+      const handleClickCheckIt = () => {
+        navigate('/checkit'); 
+      };
     
     return (
       <>
@@ -108,6 +112,13 @@ const ProjectsPage = () => {
       <H1>My Projects 💻</H1>   
 
       <SocialsDiv>
+
+      <Button onClick={handleClickCheckIt}>
+    <H2>🌟  <span style={{textDecoration: "underline"}}>CheckIt</span></H2>
+    <h5>Beginner Typescript Project</h5>
+      </Button>
+
+
       <Button onClick={handleClickNFIB}>
     <H2>🌟  <span style={{textDecoration: "underline"}}>NFIB</span></H2>
     <h5>Freelance Project</h5>

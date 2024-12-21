@@ -8,6 +8,7 @@ import picture from "../images/profile-picture.jpg";
 import email from "../images/email-logo.png";
 import github from "../images/github-logo.png";
 import linkedin from "../images/linkedin-logo.png";
+import backToTop from "../images/arrow-up.png"
 
 
 const H1 = styled.h1`
@@ -281,6 +282,9 @@ const navExperience = () => {
     <br/>
     <br/>
     <br/>
+    <div className="top-btn">
+    <a href="/"><img src={backToTop} alt="arrow up"/></a>
+    </div>
     <PageSpacing />
     </div>
   );

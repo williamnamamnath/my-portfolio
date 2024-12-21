@@ -2,6 +2,7 @@ import { useEffect, React } from "react";
 
 import styled from "styled-components";
 import projectEmporium from "../images/Emporium-home-page.JPG";
+import backToTop from "../images/arrow-up.png"
 
 const Picture = styled.img`
   box-shadow: 0 2px 20px 0 #0046EA;
@@ -213,6 +214,9 @@ const Emporium = () => {
                         </ProjectStack>
                     </NameCard>
                     </ParentDiv>
+                    <div className="top-btn">
+                    <a href="/emporium"><img src={backToTop} alt="arrow up"/></a>
+                    </div>
             </div>
         </>
     )

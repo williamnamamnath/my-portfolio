@@ -2,6 +2,7 @@ import { useEffect, React } from "react";
 
 import styled from "styled-components";
 import projectNFIB from "../images/NFIB-home-page.JPG";
+import backToTop from "../images/arrow-up.png"
 
 const Picture = styled.img`
   box-shadow: 0 2px 20px 0 #0046EA;
@@ -195,6 +196,9 @@ const NFIB = () => {
                         </ProjectStack>
                     </NameCard>
                     </ParentDiv>
+                    <div className="top-btn">
+                    <a href="/nfib"><img src={backToTop} alt="arrow up"/></a>
+                    </div>
             </div>
         </>
     )
