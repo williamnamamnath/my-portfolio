@@ -80,7 +80,7 @@ const LI = styled.li`
 
 const Paragraph = styled.p`
     font-size: 1.4rem;
-    text-align: justify;
+    text-align: left;
     margin: 0.6rem;
     padding: 1.5rem;
     line-height: 1.5;
@@ -176,6 +176,8 @@ const NFIB = () => {
                             <Paragraph>
                                 With this website, visitors will be able to learn more about the NFIB clinic at the MUHC and how to refer patients or family members to the clinic. 
                             </Paragraph>
+                            <br/>
+                            <br/>
                             <br/>
                     <H3>Responsibilities:</H3>
                         <ul>

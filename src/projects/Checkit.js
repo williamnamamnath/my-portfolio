@@ -80,7 +80,7 @@ const LI = styled.li`
 
 const Paragraph = styled.p`
     font-size: 1.4rem;
-    text-align: justify;
+    text-align: left;
     margin: 0.6rem;
     padding: 1.5rem;
     line-height: 1.5;
@@ -168,6 +168,8 @@ const CheckIt = () => {
                         <Paragraph>
                             The CheckIt app is a project with a keen focus on Typescript, engineered to apply my Typescript skills from a beginner level. CheckIt is a to-do app that allows users to enter items to complete, to check them off or delete them, and they may also clear the whole list of tasks if need be.  
                         </Paragraph> 
+                            <br/>
+                            <br/>
                             <br/>
                     <H3>Responsibilities:</H3>
                         <ul>

@@ -57,7 +57,7 @@ flex-wrap: wrap;
 
 const Paragraph = styled.p`
     font-size: 1.4rem;
-    text-align: justify;
+    text-align: left;
     margin: 0.6rem;
     padding: 1.5rem;
     line-height: 1.5;
@@ -169,6 +169,7 @@ const Emporium = () => {
                         <Paragraph>
                             Project E-Wear Emporium is a group project, with tasks divided between 4 team members. The objective of this e-commerce website is to display fitness products
                         </Paragraph>
+                        <br/>
                         <br/>
                         <br/>
                         <H3>Responsibilities:</H3>

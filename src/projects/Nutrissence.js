@@ -57,7 +57,7 @@ flex-wrap: wrap;
 
 const Paragraph = styled.p`
     font-size: 1.4rem;
-    text-align: justify;
+    text-align: left;
     margin: 0.6rem;
     padding: 1.5rem;
     line-height: 1.5;
@@ -173,6 +173,8 @@ const Nutrissence = () => {
                         <Paragraph>
                             And the best part, this website is FREE to use! You simply need to create an account and you'll be able to get started 😊
                         </Paragraph>
+                        <br/>
+                        <br/>
                         <br/>
                     <H3>Responsibilities:</H3>
                         <ul>

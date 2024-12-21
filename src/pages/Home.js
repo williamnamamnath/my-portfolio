@@ -223,6 +223,7 @@ const navExperience = () => {
     <TechStack className="devicon-html5-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-css3-plain-wordmark colored"></TechStack>
     <TechStack className="devicon-javascript-plain colored"></TechStack>
+    <TechStack className="devicon-typescript-plain colored"></TechStack>
     </StackDiv>
     <StackDiv>
     <TechStack className="devicon-react-original-wordmark colored"></TechStack>    
