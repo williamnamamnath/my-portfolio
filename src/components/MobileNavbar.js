@@ -2,10 +2,9 @@ import { useNavigate } from "react-router-dom";
 
 import styled from "styled-components";
 
-import email from "../images/small-email.png";
-import github from "../images/small-github.png";
-import linkedin from "../images/small-linkedin.png"; 
-
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 
 const MobileNavbar = ({ isOpen, toggleMenu }) => {
@@ -41,9 +40,9 @@ const navExperience = () => {
               </li>
               <li>
               <SocialsDiv>
-                <SocialLogo href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"/></SocialLogo>
-                <SocialLogo href="https://www.linkedin.com/in/william-nam-amnath/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo"/></SocialLogo>
-                <SocialLogo href="mailto:william.nam-amnath@mail.mcgill.ca" target="_blank" rel="noopener noreferrer"><img src={email} alt="email logo"/></SocialLogo>
+                <SocialLogo href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><FaGithub /></SocialLogo>
+                <SocialLogo href="https://www.linkedin.com/in/william-nam-amnath/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></SocialLogo>
+                <SocialLogo href="mailto:william.nam-amnath@mail.mcgill.ca" target="_blank" rel="noopener noreferrer"><MdEmail /></SocialLogo>
                 </SocialsDiv>
               </li>
             </ul>
@@ -109,6 +108,8 @@ const SocialsDiv = styled.div`
 
 const SocialLogo = styled.a`
   cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
 `
 
 export default MobileNavbar;

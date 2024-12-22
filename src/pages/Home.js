@@ -3,11 +3,13 @@ import { useNavigate } from "react-router-dom";
 
 import AboutMe from "./AboutMe";
 
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 import styled from "styled-components";
 import picture from "../images/profile-picture.jpg";
-import email from "../images/email-logo.png";
-import github from "../images/github-logo.png";
-import linkedin from "../images/linkedin-logo.png";
+
 import backToTop from "../images/arrow-up.png"
 
 
@@ -116,6 +118,8 @@ const SocialsDiv = styled.div`
 
 const Social = styled.a`
     transition: transform 0.3s ease;
+    color: white;
+    font-size: 2rem;
 
 &:hover {
   transform: scale(1.2);
@@ -195,9 +199,9 @@ const navExperience = () => {
       <hr/>
       <h4>📍 Montreal, QC</h4> 
       <SocialsDiv>
-      <Social href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"/></Social>
-      <Social href="https://www.linkedin.com/in/william-nam-amnath/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo"/></Social>
-      <Social href="mailto:william.nam-amnath@mail.mcgill.ca" target="_blank" rel="noopener noreferrer"><img src={email} alt="email logo"/></Social>
+      <Social href="https://github.com/williamnamamnath" target="_blank" rel="noopener noreferrer"><FaGithub /></Social>
+      <Social href="https://www.linkedin.com/in/william-nam-amnath/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></Social>
+      <Social href="mailto:william.nam-amnath@mail.mcgill.ca" target="_blank" rel="noopener noreferrer"><MdEmail /></Social>
       </SocialsDiv>
     </NameCard>
       </PicAndCard>
