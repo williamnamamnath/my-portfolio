@@ -4,7 +4,7 @@
 
 ## Introduction
 
-**👋 Hi there!** 
+**👋 Hi There!** 
 
 My name is **William Nam-Amnath** and I am a junior web developer. To know more about who I am, my philosophy as a developer, my education level as well as my past projects, feel free to explore my portfolio. Feel free to reach out should you have any questions or inquiries!
 
@@ -18,6 +18,6 @@ My name is **William Nam-Amnath** and I am a junior web developer. To know more 
 
 ## My Socials
 
-**LinkedIn:** [linkedin.com/in/william-nam-amnath](linkedin.com/in/william-nam-amnath) 
+- **LinkedIn:** [linkedin.com/in/william-nam-amnath](linkedin.com/in/william-nam-amnath) 
 
-**Email:** william.nam-amnath@mail.mcgill.ca
+- **Email:** william.nam-amnath@mail.mcgill.ca
