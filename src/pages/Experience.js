@@ -71,16 +71,7 @@ const Experience = () => {
         </ParentDiv>
         <br/>
         <br/>
-        <H1>My Education and Internships</H1>
-        <ParentDiv>
-            <ChildDiv>
-                <H2><span style={{color: "#1C6E8C"}}>October 2024</span></H2>
-                <ul>
-                    <li><span style={{fontWeight: "bold"}}>Frontend Developer Intern</span> at Loriginal.org, also known as Artur.Art</li>
-                </ul>
-            </ChildDiv>
-        </ParentDiv>
-        <br/>
+        <H1>My Education</H1>
         <ParentDiv>
             <ChildDiv>
                 <H2><span style={{color: "#1C6E8C"}}>October 2023 - May 2024</span></H2>
